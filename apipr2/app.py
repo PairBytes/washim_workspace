@@ -95,7 +95,7 @@ class BookView(Resource):
             return {'message': 'book not found'},404
  
 api.add_resource(BooksView, '/books')
-api.add_resource(BookView,'/book/<string:name>')
+api.add_resource(BookView,'/books/<string:name>')
  
 
 

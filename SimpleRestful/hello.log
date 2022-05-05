@@ -1,0 +1,12 @@
+2022-04-30 00:16:50,114 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'username'
+2022-04-30 00:19:28,317 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'username'
+2022-04-30 00:22:24,587 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'username'
+2022-04-30 00:22:48,469 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'username'
+2022-05-02 13:57:24,632 - hello_app - ERROR - HelloTest:get:error:'password'
+2022-05-02 13:57:35,970 - hello_app - ERROR - HelloTest:get:error:'password'
+2022-05-02 13:57:44,967 - hello_app - ERROR - HelloTest:get:error:'password'
+2022-05-02 14:01:17,586 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'password'
+2022-05-02 14:01:20,397 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'password'
+2022-05-02 14:01:22,166 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'password'
+2022-05-02 14:01:46,883 - hello_app - ERROR - HelloTest:get:error:name 'password' is not defined
+2022-05-02 14:05:13,397 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() takes 1 positional argument but 2 were given
