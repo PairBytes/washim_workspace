@@ -3,16 +3,21 @@ from flask_restful import Resource, Api, reqparse
 from flask_marshmallow import Marshmallow
 import config
 import time
-from hello_app.models.Books import db
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+
 
 
 app = Flask(__name__)
 app.config.from_object('config')
 
+db = SQLAlchemy(app)
 
 api = Api(app)
 ma = Marshmallow(app)
-db.init_app(app)
+migrate = Migrate(app, db)
+
 
 
 if app.config['DEBUG']:
@@ -24,6 +29,7 @@ import hello_app.routes.routes
 def start_timer():
     g.start = time.time()
 
+@app.before_first_request
 def create_table():
     db.create_all()
 
