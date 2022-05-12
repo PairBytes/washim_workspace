@@ -1,9 +1,10 @@
+from unicodedata import name
 import urllib.request
 from flask_restful import Resource, reqparse
 from hello_app import app
 from hello_app.models.Books import BookModel, db
 from hello_app.services.hello_service import HelloService
-# book_view_service
+from hello_app.services.book_view_service import BookService
 from flask import request
 
 class HelloTest(Resource):
@@ -65,37 +66,13 @@ class BookView(Resource):
         help = "Can't leave blank"
         )'''
  
-    def get(self, name):
-        book = BookModel.query.filter_by(name=name).first()
-        if book:
-            return book.json()
-        return {'message':'book not found'},404
-        # return book_view_service.get_book()
-        
+    def get(self,name):
+        return BookService.get_book(name)
+
  
     def put(self,name):
-        data = request.get_json()
-        #data = BookView.parser.parse_args()
- 
-        book = BookModel.query.filter_by(name=name).first()
- 
-        if book:
-            book.price = data["price"]
-            book.author = data["author"]
-        else:
-            book = BookModel(name=name,**data)
- 
-        db.session.add(book)
-        db.session.commit()
- 
-        return book.json()
+        return BookService.put_book(name)
+        
  
     def delete(self,name):
-        book = BookModel.query.filter_by(name=name).first()
-        if book:
-            db.session.delete(book)
-            db.session.commit()
-            return {'message':'Deleted'}
-        else:
-            return {'message': 'book not found'},404
- 
+        return BookService.delete_book(name)
