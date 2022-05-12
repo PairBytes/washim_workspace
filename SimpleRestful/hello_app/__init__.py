@@ -15,6 +15,7 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 api = Api(app)
+# db.init_app(app)
 ma = Marshmallow(app)
 migrate = Migrate(app, db)
 
