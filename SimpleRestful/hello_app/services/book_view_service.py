@@ -8,11 +8,14 @@ class BookService(Resource):
     # Like 
     # http://localhost:5000/books/book1, /books/<string:name>
     def get_book(name):
+        # try:
         book = BookModel.query.filter_by(name=name).first()
-        print("Name:",name)
+        # print("Name:",name)
         if book:
             return book.json()
         return {'message':'book not found'},404
+    # except Exception as e:
+        #      return {"error": "something went wrong!"}
     
     # To Put/Edit/Update data 
     def put_book(name):
@@ -27,16 +30,16 @@ class BookService(Resource):
         else:
             book = BookModel(name=name,**data)
  
-        db.session.add(book)
-        db.session.commit()
+        # db.session.add(book)
+        # db.session.commit()
         return book.json()
 
-    # To delete individual data
     def delete_book(name):
         book = BookModel.query.filter_by(name=name).first()
         if book:
-            db.session.delete(book)
-            db.session.commit()
+            # db.session.delete(book)
+            # db.session.commit()
             return {'message':'Deleted'}
         else:
             return {'message': 'book not found'},404
+

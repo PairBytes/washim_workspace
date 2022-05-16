@@ -55,22 +55,23 @@ class BooksView(Resource):
 class BookView(Resource):
     '''
     parser = reqparse.RequestParser()
-    parser.add_argument('price',
-        type=float,
-        required=True,
-        help = "Can't leave blank"
-        )
-    parser.add_argument('author',
-        type=str,
-        required=True,
-        help = "Can't leave blank"
-        )'''
+    parser.add_argument('price', type=float, required=True, help = "Can't leave blank")
+    parser.add_argument('author', type=str,  required=True, help = "Can't leave blank")'''
  
     def get(self,name):
         return BookService.get_book(name)
 
  
     def put(self,name):
+        # try:
+        #     parser = reqparse.RequestParser()
+        #     parser.add_argumetn('name', type=float, required=True, help = "Can't leave blank")
+        #     parser.add_argument('price', type=float, required=True, help = "Can't leave blank")
+        #     parser.add_argument('author', type=str,  required=True, help = "Can't leave blank")
+        #     args = parser.parse_args()
+        #     return BookService.update_book(args['name'],args['price'],args['author'])
+        # except Exception as e:
+        #     return {"error": "something went wrong!"}
         return BookService.put_book(name)
         
  

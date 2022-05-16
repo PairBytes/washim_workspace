@@ -15,3 +15,11 @@ class BookModel(db.Model):
 
     def json(self):
         return {"Name":self.name, "Price":self.price, "Author":self.author}
+    
+    def save(self):
+        db.session.add()
+        db.session.commit()
+    
+    def delete(self):
+        db.session.delete()
+        db.session.commit()
