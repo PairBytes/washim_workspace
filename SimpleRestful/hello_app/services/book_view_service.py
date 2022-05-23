@@ -37,8 +37,8 @@ class BookService(Resource):
     def delete_book(name):
         book = BookModel.query.filter_by(name=name).first()
         if book:
-            # db.session.delete(book)
-            # db.session.commit()
+            db.session.delete(book)
+            db.session.commit()
             return {'message':'Deleted'}
         else:
             return {'message': 'book not found'},404

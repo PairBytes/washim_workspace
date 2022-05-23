@@ -37,6 +37,7 @@ class BooksView(Resource):
         required=True,
         help = "Can't leave blank"
     )'''
+    
  
     def get(self):
         books = BookModel.query.all()
