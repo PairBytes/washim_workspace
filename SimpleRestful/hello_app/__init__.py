@@ -34,6 +34,22 @@ def start_timer():
 def create_table():
     db.create_all()
 
+from functools import wraps
+def  token_required(f):
+	@wraps(f)
+	def decorated(*args, **kwargs):
+		token = request.args.get('token')
+
+		if not token:
+			return jsonify({'message':'Token is Missing!'}),403
+		try:
+			data = jwt.decode(token, app.config['SECRET_KEY'],algorithms=['HS256'])
+		except:
+		 	return jsonify({'message':'Token is Invalid!'})
+
+		return f(*args, **kwargs)
+	return decorated
+
 
 
 @api.representation('application/json')
