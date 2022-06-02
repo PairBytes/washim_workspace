@@ -6,8 +6,10 @@ from hello_app.models.Books import BookModel, db
 from hello_app.services.hello_service import HelloService
 from hello_app.services.book_view_service import BookService
 from flask import request
+from hello_app.__init__ import token_required
 
 class HelloTest(Resource):
+    
     def get(self):
         try:
             parser = reqparse.RequestParser()
@@ -38,8 +40,9 @@ class BooksView(Resource):
         help = "Can't leave blank"
     )'''
     
- 
+    @token_required
     def get(self):
+        
         books = BookModel.query.all()
         return {'Books':list(x.json() for x in books)}
  
