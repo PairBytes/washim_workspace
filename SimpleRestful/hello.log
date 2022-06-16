@@ -10,3 +10,5 @@
 2022-05-02 14:01:22,166 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() missing 1 required positional argument: 'password'
 2022-05-02 14:01:46,883 - hello_app - ERROR - HelloTest:get:error:name 'password' is not defined
 2022-05-02 14:05:13,397 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() takes 1 positional argument but 2 were given
+2022-06-16 18:26:35,907 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-16 18:35:02,719 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.

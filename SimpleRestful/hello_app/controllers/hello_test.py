@@ -6,7 +6,9 @@ from hello_app.models.Books import BookModel, db
 from hello_app.services.hello_service import HelloService
 from hello_app.services.book_view_service import BookService
 from flask import request
-from hello_app.__init__ import token_required
+
+# from hello_app.__init__ import token_required
+from hello_app.controllers.decorators.authenticated import authenticated
 
 class HelloTest(Resource):
     
@@ -40,11 +42,13 @@ class BooksView(Resource):
         help = "Can't leave blank"
     )'''
     
-    @token_required
+    # @token_required
+    @authenticated()
     def get(self):
         
         books = BookModel.query.all()
         return {'Books':list(x.json() for x in books)}
+        
  
     def post(self):
         data = request.get_json()

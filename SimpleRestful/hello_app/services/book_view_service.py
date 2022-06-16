@@ -1,12 +1,12 @@
 from flask_restful import Resource
 from hello_app.models.Books import BookModel, db
-from hello_app.__init__ import token_required
+# from hello_app.__init__ import token_required
 
 class BookService(Resource):
     # to get individual data request 
     # Like 
     # http://localhost:5000/books/book1, /books/<string:name>
-    @token_required
+    # @token_required
     def get_book(name):
         # try:
         book = BookModel.query.filter_by(name=name).first()
