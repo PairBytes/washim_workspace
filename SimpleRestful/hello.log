@@ -12,3 +12,22 @@
 2022-05-02 14:05:13,397 - hello_app - ERROR - HelloTest:get:error:HelloService.get_username() takes 1 positional argument but 2 were given
 2022-06-16 18:26:35,907 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
 2022-06-16 18:35:02,719 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-17 20:31:34,320 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-17 20:35:00,952 - hello_app - ERROR - HelloTest:get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-21 10:46:45,130 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-21 10:53:15,401 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-21 10:56:55,062 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-21 10:57:59,772 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-21 11:00:24,782 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-06-23 23:11:13,771 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'wasim@gmail.com', 'password': '1234', 'user_type': 'Vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8877253026', 'department_type': 'Computer Sc.'}
+2022-06-23 23:11:13,794 - hello_app - ERROR - UserService:custom_signup:: When initializing mapper mapped class UsersModel->users, expression 'ListOfDevices' failed to locate a name ('ListOfDevices'). If this is a class name, consider adding this relationship() to the <class 'hello_app.models.user_model.UsersModel'> class after both dependent classes have been defined.
+2022-06-23 23:13:23,624 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'wasim@gmail.com', 'password': '1234', 'user_type': 'Vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8877253026', 'department_type': 'Computer Sc.'}
+2022-06-23 23:15:38,458 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'wasim@gmail.com', 'password': '1234', 'user_type': 'Vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8877253026', 'department_type': 'Computer Sc.'}
+2022-06-23 23:20:22,870 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'wasim@gmail.com', 'otp': '8877', 'user_type': 'Vendor'}
+2022-06-23 23:20:22,871 - hello_app - ERROR - ValidateEmailOTP::post::error:'UserService' object has no attribute 'validate_otp_email'
+2022-06-23 23:27:14,675 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'wasim@gmail.com', 'otp': '8877', 'user_type': 'Vendor'}
+2022-06-23 23:27:57,653 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1631@gmail.com', 'password': '1234', 'user_type': 'Vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8877253026', 'department_type': 'Computer Sc.'}
+2022-06-23 23:28:22,977 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1631@gmail.com', 'password': '1234', 'user_type': 'Vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805838', 'department_type': 'Computer Sc.'}
+2022-06-23 23:29:06,210 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}
+2022-06-23 23:34:57,341 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}
+2022-06-23 23:37:26,468 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}

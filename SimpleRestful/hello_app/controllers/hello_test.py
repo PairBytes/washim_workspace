@@ -8,7 +8,7 @@ from hello_app.services.book_view_service import BookService
 from flask import request
 
 # from hello_app.__init__ import token_required
-from hello_app.controllers.decorators.authenticated import authenticated
+from hello_app.decorators.authenticated import authenticated
 
 class HelloTest(Resource):
     
