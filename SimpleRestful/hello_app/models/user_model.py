@@ -61,11 +61,6 @@ class UsersModel(db.Model):
                 getattr(self, col.name) is not None and col.name not in not_convert_into_str) else getattr(self,
                                                                                                            col.name))
                 for col in self.__table__.columns if col.name != 'password' and col.name != 'access_token'}
-        is_assign_project = False
-        if 'userid' in user_data:
-            if user_data['userid'] in app.config['PROJECT_ASSIGNOR']:
-                is_assign_project = True
-        user_data['is_assign_project'] = is_assign_project
         return user_data
 
     def to_json_access_token(self):
@@ -74,11 +69,6 @@ class UsersModel(db.Model):
                 getattr(self, col.name) is not None and col.name not in not_convert_into_str) else getattr(self,
                                                                                                            col.name))
                      for col in self.__table__.columns if col.name != 'password'}
-        is_assign_project = False
-        if 'userid' in user_data:
-            if user_data['userid'] in app.config['PROJECT_ASSIGNOR']:
-                is_assign_project = True
-        user_data['is_assign_project'] = is_assign_project
         return user_data
 
     @classmethod
@@ -109,7 +99,7 @@ class UsersModel(db.Model):
 
     @staticmethod
     def generate_password_hash(password):
-        return str(bcrypt.hashpw(password.encode('utf8'), bcrypt.gensalt(10)).decode('utf8'))
+        return str(bcrypt.hashpw(password.encode('utf8'), bcrypt.gensalt(10)))
 
     @staticmethod
     def verify_hash(password, hashed):

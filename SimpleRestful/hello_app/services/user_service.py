@@ -13,9 +13,6 @@ from flask_jwt_extended import create_access_token
 
 
 class UserService:
-    # def __init__(self):
-    #     self.user_activity_coll = Base_Mongo(exmyb_mongo_db, app.config['USER_ACTIVITY_LOGS'])
-    #     self.user_validate_coll = Base_Mongo(exmyb_mongo_db, app.config['USR_VALIDATE_COLL'])
 
     def custom_signup(self, email, password, user_type, first_name, last_name, country_code, mobile_number,
                       department_type):
@@ -60,6 +57,7 @@ class UserService:
 
             usr_verify = UsrVerificationModel(usr_type=user_type, verification_id=email, otp=otp, is_expired=False,
                                               verification_type='email', otp_time=datetime.utcnow(), attempts=0)
+            usr_verify.save()
             html_body = """\
             <html>
             <head></head>
@@ -71,9 +69,9 @@ class UserService:
 
             # aws_mail_obj = AmazonSESMailSend(app.config['AWS_FROM_EMAIL_ADDR'])
             # is_send, msg = aws_mail_obj.send_mail('Email Verification', [email], html_message=html_body)
-            # usr_verify.is_send = is_send
-            # usr_verify.message = msg
-            # usr_verify.save()
+            usr_verify.is_send = True
+            usr_verify.message = "msg"
+            usr_verify.save()
             print('Html_Body : ',html_body)
             return True
         except Exception as e:
@@ -106,16 +104,10 @@ class UserService:
                             user = UsersModel.find_by_email_and_usr_type(email, user_type)
                             user.email_verify = True
                             user.access_token = create_access_token(identity=str(user.userid), expires_delta=False)
-                            # set client or vendor org profile
-                            if user.user_type == 'client':
-                                self.create_user_org_profile(user.id, user.user_type)
+
                         user.save()
-                        if user.user_type in ['client', 'vendor']:
-                            org_profiles = self.get_user_profiles(user.id, user.user_type)
-                            user = user.to_json_access_token()
-                            user['org_profiles'] = org_profiles
-                        else:
-                            user = user.to_json_access_token()
+  
+                        user = user.to_json()
                         return RestResponse(user, message="Email Validated", status=1).to_json(), 201
                 else:
                     return RestResponse(err='You entered invalid OTP.').to_json(), 400

@@ -27,33 +27,33 @@ class Users(Resource):
 class CustomSignup(Resource):
 
     def post(self):
-        # try:
-        parser = reqparse.RequestParser()
-        parser.add_argument('email', type=str, help='Name can not be blank', required=True)
-        parser.add_argument('password', type=str, help='Password can not be blank', required=True)
-        parser.add_argument('user_type', type=str, help='user_type can not be blank', required=True)
-        parser.add_argument('first_name', type=str)
-        parser.add_argument('last_name', type=str)
-        parser.add_argument('country_code', type=str)
-        parser.add_argument('mobile_number', type=str)
-        parser.add_argument('department_type', type=str)
+        try:
+            parser = reqparse.RequestParser()
+            parser.add_argument('email', type=str, help='Name can not be blank', required=True)
+            parser.add_argument('password', type=str, help='Password can not be blank', required=True)
+            parser.add_argument('user_type', type=str, help='user_type can not be blank', required=True)
+            parser.add_argument('first_name', type=str)
+            parser.add_argument('last_name', type=str)
+            parser.add_argument('country_code', type=str)
+            parser.add_argument('mobile_number', type=str)
+            parser.add_argument('department_type', type=str)
 
-        args = parser.parse_args()
-        app.logger.debug("Users:CustomSignup:post:payload:{}".format(args))
+            args = parser.parse_args()
+            app.logger.debug("Users:CustomSignup:post:payload:{}".format(args))
 
-        if args['user_type'] == 'exmyb':
-            if not args['department_type']:
-                return RestResponse(err="Department Type can not be blank").to_json(), 400
-            else:
-                if args['department_type'] not in app.config['DEPARTMENT_TYPE']:
-                    return RestResponse(err="Invalid Department Type").to_json(), 400
+            if args['user_type'] == 'exmyb':
+                if not args['department_type']:
+                    return RestResponse(err="Department Type can not be blank").to_json(), 400
+                else:
+                    if args['department_type'] not in app.config['DEPARTMENT_TYPE']:
+                        return RestResponse(err="Invalid Department Type").to_json(), 400
 
-        return UserService().custom_signup(args['email'], args['password'], args['user_type'], args['first_name'],
-                                            args['last_name'], args['country_code'], args['mobile_number'],
-                                            args['department_type'])
-        # except Exception as e:
-        #     app.logger.error("User:CustomSignup:post:error:{}".format(e))
-        #     return RestResponse(err='Something went wrong').to_json(), 500
+            return UserService().custom_signup(args['email'], args['password'], args['user_type'], args['first_name'],
+                                                args['last_name'], args['country_code'], args['mobile_number'],
+                                                args['department_type'])
+        except Exception as e:
+            app.logger.error("User:CustomSignup:post:error:{}".format(e))
+            return RestResponse(err='Something went wrong').to_json(), 500
 
 
 

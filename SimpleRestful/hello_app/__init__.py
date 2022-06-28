@@ -1,6 +1,8 @@
 from flask import Flask, make_response, json, g, request, jsonify, redirect
 from flask_restful import Resource, Api, reqparse
 from flask_marshmallow import Marshmallow
+from flask_jwt_extended import JWTManager
+from flask_mail import Mail
 import config
 import time
 from flask_sqlalchemy import SQLAlchemy
@@ -15,8 +17,10 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 api = Api(app)
-# db.init_app(app)
+jwt = JWTManager(app)
+mail = Mail(app)
 ma = Marshmallow(app)
+
 migrate = Migrate(app, db)
 
 

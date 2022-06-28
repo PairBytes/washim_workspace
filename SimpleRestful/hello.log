@@ -31,3 +31,37 @@
 2022-06-23 23:29:06,210 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}
 2022-06-23 23:34:57,341 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}
 2022-06-23 23:37:26,468 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1631@gmail.com', 'otp': '0900', 'user_type': 'Vendor'}
+2022-06-24 19:00:35,309 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra22@gmail.com', 'password': '12345678', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-24 19:00:35,384 - hello_app - ERROR - UserService:custom_signup:: 'str' object has no attribute 'decode'
+2022-06-24 19:01:03,151 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra22@gmail.com', 'otp': '5659', 'user_type': 'vendor'}
+2022-06-28 20:46:52,714 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra12@gmail.com', 'password': '12345678', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-28 20:46:52,797 - hello_app - ERROR - UserService:custom_signup:: 'str' object has no attribute 'decode'
+2022-06-28 20:47:49,112 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra12@gmail.com', 'otp': '8335', 'user_type': 'vendor'}
+2022-06-28 20:47:49,115 - hello_app - INFO - OTP Expire Now Time:2022-06-28 15:17:49.115612
+2022-06-28 20:47:49,115 - hello_app - INFO - OTP Time:2022-06-28 15:16:52.724186
+2022-06-28 20:47:49,116 - hello_app - INFO - OTP Time min:0
+2022-06-28 20:47:49,118 - hello_app - ERROR - UserService:validate_otp_email:: 'NoneType' object has no attribute 'email_verify'
+2022-06-28 20:49:37,489 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra13@gmail.com', 'password': '12345678', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-28 20:54:39,699 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra14@gmail.com', 'password': '12345678', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-28 20:55:26,416 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra14@gmail.com', 'otp': '2387', 'user_type': 'vendor'}
+2022-06-28 20:55:26,420 - hello_app - INFO - OTP Expire Now Time:2022-06-28 15:25:26.420886
+2022-06-28 20:55:26,421 - hello_app - INFO - OTP Time:2022-06-28 15:24:39.709038
+2022-06-28 20:55:26,421 - hello_app - INFO - OTP Time min:0
+2022-06-28 23:16:28,349 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra15@gmail.com', 'password': '123456718', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-28 23:20:23,878 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'udaymishra22@gmail.com', 'password': '12345618', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-06-28 23:20:42,294 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra22@gmail.com', 'otp': '2772', 'user_type': 'vendor'}
+2022-06-28 23:20:42,297 - hello_app - INFO - OTP Expire Now Time:2022-06-28 17:50:42.297330
+2022-06-28 23:20:42,297 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
+2022-06-28 23:20:42,297 - hello_app - INFO - OTP Time min:0
+2022-06-28 23:25:45,353 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra22@gmail.com', 'otp': '2772', 'user_type': 'vendor'}
+2022-06-28 23:25:45,361 - hello_app - INFO - OTP Expire Now Time:2022-06-28 17:55:45.361943
+2022-06-28 23:25:45,362 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
+2022-06-28 23:25:45,362 - hello_app - INFO - OTP Time min:5
+2022-06-28 23:29:49,290 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra22@gmail.com', 'otp': '2772', 'user_type': 'vendor'}
+2022-06-28 23:29:49,297 - hello_app - INFO - OTP Expire Now Time:2022-06-28 17:59:49.297365
+2022-06-28 23:29:49,297 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
+2022-06-28 23:29:49,297 - hello_app - INFO - OTP Time min:9
+2022-06-28 23:32:09,591 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'udaymishra22@gmail.com', 'otp': '2772', 'user_type': 'vendor'}
+2022-06-28 23:32:09,599 - hello_app - INFO - OTP Expire Now Time:2022-06-28 18:02:09.599170
+2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
+2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time min:11
