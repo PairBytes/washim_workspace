@@ -11,7 +11,7 @@ SECRET_KEY = 'thisissecretkey'
 
 
 username = os.getenv("DB_USERNAME", "root")
-password = os.getenv("DB_PASSWORD", "root1234")
+password = os.getenv("DB_PASSWORD", "1234")
 server = os.getenv("DB_HOST", "localhost")
 database = os.getenv("DB_NAME", "washim")
 

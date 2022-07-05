@@ -1,6 +1,8 @@
 import bcrypt as bcrypt
 from hello_app import db, app
 from datetime import datetime
+import pdb
+from werkzeug.security import check_password_hash
 
 
 class UsersModel(db.Model):
@@ -101,9 +103,12 @@ class UsersModel(db.Model):
     def generate_password_hash(password):
         return str(bcrypt.hashpw(password.encode('utf8'), bcrypt.gensalt(10)))
 
+    # pdb.set_trace()
     @staticmethod
     def verify_hash(password, hashed):
+        # if check_password_hash(pw_hashed, password.data):
         return bcrypt.checkpw(password.encode('utf8'), hashed.encode('utf8'))
+
 
     @classmethod
     def find_by_email_and_usr_type(cls, email, user_type):

@@ -65,3 +65,328 @@
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Expire Now Time:2022-06-28 18:02:09.599170
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time min:11
+2022-06-28 23:53:03,123 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram4@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805834', 'department_type': 'Computer Sc.'}
+2022-06-28 23:53:36,475 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '8168', 'user_type': 'Vendor'}
+2022-06-28 23:53:53,035 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '8168', 'user_type': 'Vendor'}
+2022-06-28 23:54:15,401 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '8168', 'user_type': 'Vendor'}
+2022-06-28 23:57:46,547 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram4@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805834', 'department_type': 'Computer Sc.'}
+2022-06-28 23:58:11,727 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '4243', 'user_type': 'Vendor'}
+2022-06-28 23:58:11,790 - hello_app - INFO - OTP Expire Now Time:2022-06-28 18:28:11.790065
+2022-06-28 23:58:11,792 - hello_app - INFO - OTP Time:2022-06-28 18:27:47
+2022-06-28 23:58:11,793 - hello_app - INFO - OTP Time min:0
+2022-06-29 15:30:47,363 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '4243', 'user_type': 'Vendor'}
+2022-06-29 15:30:48,181 - hello_app - INFO - OTP Expire Now Time:2022-06-29 10:00:48.181283
+2022-06-29 15:30:48,188 - hello_app - INFO - OTP Time:2022-06-28 18:27:47
+2022-06-29 15:30:48,190 - hello_app - INFO - OTP Time min:933
+2022-06-29 15:54:18,269 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805831', 'department_type': 'Computer Sc.'}
+2022-06-29 15:54:56,097 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '0188', 'user_type': 'Vendor'}
+2022-06-29 15:54:56,132 - hello_app - INFO - OTP Expire Now Time:2022-06-29 10:24:56.132619
+2022-06-29 15:54:56,257 - hello_app - INFO - OTP Time:2022-06-29 10:24:19
+2022-06-29 15:54:56,257 - hello_app - INFO - OTP Time min:0
+2022-07-01 21:48:00,665 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805832', 'department_type': 'Computer Sc.'}
+2022-07-01 21:49:24,786 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram2@gmail.com', 'otp': '1974', 'user_type': 'Vendor'}
+2022-07-01 21:49:24,795 - hello_app - INFO - OTP Expire Now Time:2022-07-01 16:19:24.795750
+2022-07-01 21:49:24,797 - hello_app - INFO - OTP Time:2022-07-01 16:18:01
+2022-07-01 21:49:24,797 - hello_app - INFO - OTP Time min:1
+2022-07-01 22:47:33,863 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 22:47:33,971 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 22:47:35,908 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:10:06,652 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:10:06,653 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:10:06,944 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:11:03,041 - hello_app - ERROR - Users:CustomLogin:post::error:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-01 23:11:12,282 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:11:12,283 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:11:12,301 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:11:40,856 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '5', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:11:40,857 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:11:40,885 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:12:38,477 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:12:38,478 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:12:38,487 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:14:12,385 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:14:12,386 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:14:12,446 - hello_app - ERROR - Users:CustomLogin:post::error:Invalid salt
+2022-07-01 23:14:20,638 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:14:20,639 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:14:20,650 - hello_app - ERROR - Users:CustomLogin:post::error:Invalid salt
+2022-07-01 23:15:38,161 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:15:38,189 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:15:38,209 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:16:32,747 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '12354', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:16:32,747 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:16:32,772 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:18:35,158 - hello_app - ERROR - Users:CustomLogin:post::error:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-01 23:19:28,403 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:19:28,405 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:19:28,415 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:22:14,251 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:22:14,255 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:22:14,265 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:23:34,461 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakramj2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:23:34,461 - hello_app - INFO - custom login with email washimakramj2@gmail.com
+2022-07-01 23:23:42,066 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:23:42,068 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:23:42,082 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:24:06,416 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '12344', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:24:06,419 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:24:06,425 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:24:14,640 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:24:14,641 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:24:14,653 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:31:06,527 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:31:06,540 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:31:06,575 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:31:44,366 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:31:44,367 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:31:44,432 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:35:06,194 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:35:06,198 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:35:06,263 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:37:52,837 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:37:52,884 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:37:52,971 - hello_app - ERROR - Users:CustomLogin:post::error:Invalid salt
+2022-07-01 23:39:30,585 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:39:30,588 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:40:43,975 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:40:43,978 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:49:06,811 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:49:06,815 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:49:35,317 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:49:35,324 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:49:35,348 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-01 23:51:01,297 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-01 23:51:01,305 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-01 23:51:01,334 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 00:02:09,650 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:02:09,654 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:02:09,690 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 00:03:23,374 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:03:23,377 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:03:23,409 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 00:06:34,158 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:06:34,161 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:06:34,234 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 00:07:57,203 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:07:57,209 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:07:57,230 - hello_app - ERROR - Users:CustomLogin:post::error:Invalid salt
+2022-07-02 00:11:29,281 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:11:29,286 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:11:29,314 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 00:19:34,590 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 00:19:34,597 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 00:19:34,669 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:18:27,471 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:18:27,483 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:18:27,691 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:19:27,182 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:19:27,185 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:19:27,232 - hello_app - ERROR - UserService:custom_login:error:UsersModel.verify_hash() takes 1 positional argument but 2 were given
+2022-07-02 11:20:18,814 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:20:18,816 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:20:18,843 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:33:07,742 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:33:07,746 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:33:07,876 - hello_app - ERROR - UserService:custom_login:error:Unicode-objects must be encoded before checking
+2022-07-02 11:34:52,174 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:34:52,180 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:34:52,233 - hello_app - ERROR - UserService:custom_login:error:'str' object has no attribute 'password'
+2022-07-02 11:38:22,723 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:38:22,729 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:38:22,869 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:46:58,690 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:46:58,692 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:46:58,772 - hello_app - ERROR - UserService:custom_login:error:'str' object has no attribute 'password'
+2022-07-02 11:48:24,794 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:48:24,797 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:48:24,825 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:50:51,167 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:50:51,170 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:50:51,210 - hello_app - ERROR - UserService:custom_login:error:Unicode-objects must be encoded before checking
+2022-07-02 11:53:08,260 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:53:08,271 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:53:08,365 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-02 11:53:46,261 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:53:46,264 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:53:46,388 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 11:57:39,751 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:57:39,766 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:57:39,822 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-02 11:58:25,579 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:58:25,588 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:58:25,615 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-02 11:58:53,447 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 11:58:53,449 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 11:58:53,504 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:01:08,367 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': 'Computer Sc.'}
+2022-07-02 12:01:08,370 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:01:08,378 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:01:16,097 - hello_app - ERROR - Users:CustomLogin:post::error:400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 6 column 1 (char 99)
+2022-07-02 12:01:24,656 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:01:24,657 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:01:24,666 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:04:16,597 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:04:16,597 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:04:16,650 - hello_app - ERROR - UserService:custom_login:error:name 'hashed' is not defined
+2022-07-02 12:04:48,234 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:04:48,236 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:04:48,295 - hello_app - ERROR - UserService:custom_login:error:'UserService' object has no attribute 'password'
+2022-07-02 12:06:49,113 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:06:49,113 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:06:49,139 - hello_app - ERROR - UserService:custom_login:error:name 'hashe' is not defined
+2022-07-02 12:07:06,554 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:07:06,555 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:07:06,577 - hello_app - ERROR - UserService:custom_login:error:Unicode-objects must be encoded before checking
+2022-07-02 12:07:30,646 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:07:30,647 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:07:30,688 - hello_app - ERROR - UserService:custom_login:error:'str' object has no attribute 'encoded'
+2022-07-02 12:13:14,108 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:13:14,122 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:13:14,178 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:14:38,428 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:14:38,428 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:14:38,436 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:23:23,056 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:23:23,057 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:23:23,078 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 12:59:38,036 - hello_app - ERROR - Users:CustomLogin:post::error:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-02 12:59:57,080 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 12:59:57,081 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 12:59:57,595 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:01:04,670 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:01:04,673 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:01:04,733 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:01:29,302 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:01:29,305 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:01:29,364 - hello_app - ERROR - UserService:custom_login:error:Unicode-objects must be encoded before checking
+2022-07-02 13:02:59,990 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:02:59,996 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:03:00,084 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:12:25,701 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:12:25,702 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:12:25,712 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:12:54,570 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:12:54,571 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:12:54,663 - hello_app - ERROR - UserService:custom_login:error:UsersModel.verify_hash() takes 1 positional argument but 2 were given
+2022-07-02 13:13:22,211 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:13:22,213 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:13:22,294 - hello_app - ERROR - UserService:custom_login:error:checkpw() missing 1 required positional argument: 'hashed_password'
+2022-07-02 13:14:00,313 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:14:00,314 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:14:00,377 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:15:35,955 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:15:53,858 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:15:53,859 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:15:53,887 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:21:08,345 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:21:08,347 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:21:08,445 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:21:24,250 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:21:24,252 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:21:24,280 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:23:22,017 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:23:22,019 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:23:22,062 - hello_app - ERROR - UserService:custom_login:error:'str' object has no attribute 'gensalt'
+2022-07-02 13:23:46,508 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:23:46,510 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:23:46,549 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:25:05,920 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:25:05,921 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:25:05,932 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:27:19,206 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:27:19,207 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:27:19,230 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:27:39,230 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:27:39,232 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:27:39,258 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:39:50,601 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:40:25,081 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:40:25,081 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:40:25,108 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:42:07,058 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:42:07,062 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:42:07,111 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:43:21,795 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:43:21,796 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-02 13:43:21,835 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 13:49:53,860 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram3@gmail.com', 'password': 'abc@1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805833', 'department_type': 'Computer Sc.'}
+2022-07-02 13:50:27,523 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram3@gmail.com', 'otp': '9074', 'user_type': 'Vendor'}
+2022-07-02 13:50:42,954 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram3@gmail.com', 'otp': '9047', 'user_type': 'Vendor'}
+2022-07-02 13:50:42,963 - hello_app - INFO - OTP Expire Now Time:2022-07-02 08:20:42.963323
+2022-07-02 13:50:42,963 - hello_app - INFO - OTP Time:2022-07-02 08:19:54
+2022-07-02 13:50:42,964 - hello_app - INFO - OTP Time min:0
+2022-07-02 13:51:20,015 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 13:51:20,015 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 13:51:20,024 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 14:06:49,189 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:06:49,192 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:06:49,274 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 14:13:08,270 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram4@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805834', 'department_type': 'Computer Sc.'}
+2022-07-02 14:13:56,265 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram5@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805835', 'department_type': 'Computer Sc.'}
+2022-07-02 14:14:19,743 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram5@gmail.com', 'otp': '9486', 'user_type': 'Vendor'}
+2022-07-02 14:14:19,870 - hello_app - INFO - OTP Expire Now Time:2022-07-02 08:44:19.870876
+2022-07-02 14:14:19,880 - hello_app - INFO - OTP Time:2022-07-02 08:43:56
+2022-07-02 14:14:19,883 - hello_app - INFO - OTP Time min:0
+2022-07-02 14:14:46,073 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:14:46,073 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:14:46,079 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 14:19:17,297 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:19:17,299 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:19:17,328 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-02 14:21:23,131 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:21:23,156 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:21:23,236 - hello_app - ERROR - UserService:custom_login:error:'UsersModel' object has no attribute 'hashed'
+2022-07-02 14:22:08,083 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:22:08,083 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:22:08,149 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 14:25:48,421 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 14:25:48,424 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 14:25:48,449 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 16:33:59,211 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 16:33:59,285 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 16:34:03,889 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 17:07:31,466 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 17:07:31,470 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 17:07:31,570 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 17:12:13,089 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 17:12:13,090 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 17:12:13,153 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-02 17:19:05,686 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-02 17:19:05,687 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-02 17:19:05,713 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-04 00:05:42,971 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:05:43,014 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:05:43,242 - hello_app - ERROR - UserService:custom_login:error:name 'check_password_hash' is not defined
+2022-07-04 00:08:40,693 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:08:40,697 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:08:40,793 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-04 00:14:12,024 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:14:12,027 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:14:12,119 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-04 00:14:29,949 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:14:29,952 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:14:30,001 - hello_app - ERROR - UserService:custom_login:error:name 'pw_hashed' is not defined
+2022-07-04 00:18:01,515 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:18:01,516 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:18:01,583 - hello_app - ERROR - UserService:custom_login:error:name 'pw_hashed' is not defined
+2022-07-04 00:19:26,404 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:19:26,405 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:19:26,455 - hello_app - ERROR - UserService:custom_login:error:name 'form' is not defined
+2022-07-04 00:22:33,640 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:22:33,642 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:22:33,759 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-04 00:28:03,840 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 00:28:03,841 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 00:28:03,900 - hello_app - ERROR - UserService:custom_login:error:'UsersModel' object has no attribute 'pw_hashed'
+2022-07-04 11:39:56,637 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 11:39:56,659 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 11:39:56,750 - hello_app - ERROR - UserService:custom_login:error:name 'user' is not defined
+2022-07-04 11:42:14,456 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 11:42:14,467 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 11:42:14,627 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-04 11:56:23,276 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 11:56:23,289 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 11:56:23,456 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-04 12:00:01,182 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': 'Abc@1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-04 12:00:01,188 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-04 12:00:01,288 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
