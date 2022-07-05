@@ -116,3 +116,39 @@ class UserService:
         except Exception as e:
             app.logger.error("UserService:validate_otp_email:: {}".format(str(e)))
             return RestResponse(err=str(e)).to_json(), 500
+
+    def custom_login(self, email, password, user_type, department_type):
+        app.logger.info("custom login with email {}".format(email))
+        try:
+            user = UsersModel.find_by_email_and_usr_type(email, user_type)
+            if user:
+                if not user.password:
+                    return RestResponse(err="Please set your password!").to_json(), 400
+                if UsersModel.verify_hash(password, user.password):
+                    user.last_login = datetime.utcnow()
+                    user.last_login_type = 'email'
+                    if user.access_token is None or user.access_token == '':
+                        user.access_token = create_access_token(identity=str(user.userid), expires_delta=False)
+                    user.save()
+                    user = user.to_json_access_token()
+                    return RestResponse(user, message='You are logged in successfully', status=1).to_json(), 201
+                else:
+                    return RestResponse(err="Invalid Password!").to_json(), 400
+            else:
+                return RestResponse(err="Email Id does not exist").to_json(), 400
+        except Exception as e:
+            app.logger.error("UserService:custom_login:error:{}".format(str(e)))
+            return RestResponse(err=str(e)).to_json(), 500
+
+    def get_user(self, user_id):
+        app.logger.info("fetch user: {}".format(user_id))
+        try:
+            user = UsersModel.find_by_id(user_id)
+            if user:
+                user = user.to_json()
+                return RestResponse(user, status=1).to_json(), 200
+            else:
+                return RestResponse(err='User not found!').to_json(), 400
+        except Exception as e:
+            app.logger.error("UserService:get_user:: {}".format(str(e)))
+            return RestResponse(err=str(e)).to_json(), 500

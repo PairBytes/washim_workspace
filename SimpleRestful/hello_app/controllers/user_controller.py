@@ -24,6 +24,24 @@ class Users(Resource):
             app.logger.error("Users:get:error:{}".format(str(e)))
             return RestResponse(err=str(e)).to_json(), 500
     
+    def post(self):
+        try:
+            parser = reqparse.RequestParser()
+            parser.add_argument('email', type=str, help='Name can not be blank', required=True)
+            parser.add_argument('password', type=str, help='Password can not be blank', required=True)
+            parser.add_argument('user_type', type=str, help='user_type can not be blank', required=True)
+            parser.add_argument('department_type', type=str)
+
+            args = parser.parse_args()
+            app.logger.debug("Users:CustomLogin::post::params::{}".format(args))
+
+            return UserService().custom_login(args['email'], args['password'], args['user_type'],
+                                              args['department_type'])
+
+        except Exception as e:
+            app.logger.error("Users:CustomLogin:post::error:{}".format(e))
+            return RestResponse(err='Something went wrong').to_json(), 500
+    
 class CustomSignup(Resource):
 
     def post(self):
@@ -41,22 +59,12 @@ class CustomSignup(Resource):
             args = parser.parse_args()
             app.logger.debug("Users:CustomSignup:post:payload:{}".format(args))
 
-            if args['user_type'] == 'exmyb':
-                if not args['department_type']:
-                    return RestResponse(err="Department Type can not be blank").to_json(), 400
-                else:
-                    if args['department_type'] not in app.config['DEPARTMENT_TYPE']:
-                        return RestResponse(err="Invalid Department Type").to_json(), 400
-
             return UserService().custom_signup(args['email'], args['password'], args['user_type'], args['first_name'],
                                                 args['last_name'], args['country_code'], args['mobile_number'],
                                                 args['department_type'])
         except Exception as e:
             app.logger.error("User:CustomSignup:post:error:{}".format(e))
             return RestResponse(err='Something went wrong').to_json(), 500
-
-
-
 
 class ValidateEmailOTP(Resource):
 
