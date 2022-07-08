@@ -8,6 +8,7 @@ from hello_app.models.user_varification_model import UsrVerificationModel
 from hello_app.helper.rest_response import RestResponse
 from hello_app import app
 from flask_jwt_extended import create_access_token
+from hello_app import db
 
 
 
@@ -139,7 +140,6 @@ class UserService:
         except Exception as e:
             app.logger.error("UserService:custom_login:error:{}".format(str(e)))
             return RestResponse(err=str(e)).to_json(), 500
-
     def get_user(self, user_id):
         app.logger.info("fetch user: {}".format(user_id))
         try:
@@ -152,3 +152,25 @@ class UserService:
         except Exception as e:
             app.logger.error("UserService:get_user:: {}".format(str(e)))
             return RestResponse(err=str(e)).to_json(), 500
+
+    def update_user(self, user_id, data):
+        # app.logger.info("UserService:update_user:data: {}".format(data))
+        # data = UsersModel.find_by_id(user_id = user_id)
+        # print('User',data)
+        # if data:
+        #     data.first_name = data["first_name"]
+        # else:
+        #     data = UsersModel(user_id = user_id,**data)
+        # db.session.add(data)
+        # db.session.commit()
+        # try:
+            # app.logger.info("UserService:update_user:data: {}".format(str(data)))
+            # user = UsersModel.find_by_id(user_id)
+            # user = user.to_json()
+            # db.session.add(data)
+            # db.session.commit()
+            # return RestResponse(user, message="Your profile has been updated successfully", status=1).to_json(), 200
+
+        # except Exception as e:
+        #     app.logger.error("UserService:update_user:: {}".format(str(e)))
+        #     return RestResponse(err=str(e)).to_json(), 500

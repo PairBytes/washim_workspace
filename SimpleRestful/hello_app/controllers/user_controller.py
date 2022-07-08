@@ -5,8 +5,10 @@ from flask_restful import Resource, reqparse
 from hello_app.helper.rest_response import RestResponse
 from hello_app import app
 from hello_app.services.user_service import UserService
-
 from flask import request
+from hello_app.models.user_model import UsersModel
+
+
 
 class Users(Resource):
 
@@ -23,6 +25,7 @@ class Users(Resource):
         except Exception as e:
             app.logger.error("Users:get:error:{}".format(str(e)))
             return RestResponse(err=str(e)).to_json(), 500
+
     
     def post(self):
         try:
@@ -41,6 +44,44 @@ class Users(Resource):
         except Exception as e:
             app.logger.error("Users:CustomLogin:post::error:{}".format(e))
             return RestResponse(err='Something went wrong').to_json(), 500
+    @authenticated()
+    def put(self, current_user_id):
+        # try:
+        #     parser = reqparse.RequestParser()
+        #     parser.add_argument('data', type=dict, help='User data can not be blank', required=True)
+        #     args = parser.parse_args()
+        #     app.logger.info("Users::put::request_body::{}".format(args))
+
+        #     app.logger.info("Users:CustomLogin::put:user_id:{}".format(current_user_id))
+        #     return UserService().update_user(current_user_id, args['data'])
+
+        # except Exception as e:
+        #     app.logger.error("Users:put::error {}".format(e))
+        #     return RestResponse(err=str(e)).to_json(), 500
+        # data = request.get_json()
+        # user = UsersModel.query.filter_by(email=email).first()
+        # if user:
+        #     user.first_name = data["first_name"]
+        # else:
+        #     user = UsersModel(email=email,**data)
+        # db.session.add(user)
+        # db.session.commit()
+ 
+        # return user.json()
+        try:
+            parser = reqparse.RequestParser()
+            parser.add_argument('data', type=dict, help='User data can not be blank', required=True)
+            args = parser.parse_args()
+            app.logger.info("Users::put::request_body::{}".format(args))
+
+            app.logger.info("Users:CustomLogin::put:user_id:{}".format(current_user_id))
+            return UserService().update_user(current_user_id, args['data'])
+
+        except Exception as e:
+            app.logger.error("Users:put::error {}".format(e))
+            return RestResponse(err=str(e)).to_json(), 500
+
+    
     
 class CustomSignup(Resource):
 

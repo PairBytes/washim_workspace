@@ -99,7 +99,7 @@ class UsersModel(db.Model):
 
     @staticmethod
     def generate_password_hash(password):
-        return str(bcrypt.hashpw(password.encode('utf8'), bcrypt.gensalt(10)))
+        return bcrypt.hashpw(password.encode('utf8'), bcrypt.gensalt(10))
 
     @staticmethod
     def verify_hash(password, hashed):

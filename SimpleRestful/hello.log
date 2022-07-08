@@ -65,3 +65,201 @@
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Expire Now Time:2022-06-28 18:02:09.599170
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time:2022-06-28 17:50:24
 2022-06-28 23:32:09,599 - hello_app - INFO - OTP Time min:11
+2022-07-06 18:07:00,189 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805831', 'department_type': 'Computer Sc.'}
+2022-07-06 18:07:27,003 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '0782', 'user_type': 'Vendor'}
+2022-07-06 18:07:27,524 - hello_app - INFO - OTP Expire Now Time:2022-07-06 12:37:27.524555
+2022-07-06 18:07:27,525 - hello_app - INFO - OTP Time:2022-07-06 12:37:00
+2022-07-06 18:07:27,539 - hello_app - INFO - OTP Time min:0
+2022-07-06 18:07:42,742 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 18:07:42,743 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 18:07:42,760 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 18:10:12,020 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 18:10:12,021 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 18:10:12,101 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 21:30:45,390 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 21:30:45,412 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 21:30:45,947 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 22:49:12,855 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 22:49:12,884 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 22:49:13,204 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:04:26,256 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor'}
+2022-07-06 23:04:26,258 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 23:04:26,335 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:19:35,533 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 23:19:35,534 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-06 23:19:35,604 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:20:03,290 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': 'wasim', 'last_name': 'akram', 'country_code': '+91', 'mobile_number': '8210805832', 'department_type': 'Computer Sc.'}
+2022-07-06 23:20:28,302 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '5312', 'user_type': 'Vendor'}
+2022-07-06 23:21:35,951 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '5312', 'user_type': 'Vendor'}
+2022-07-06 23:22:03,253 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '5312', 'user_type': 'Vendor'}
+2022-07-06 23:22:11,761 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram2@gmail.com', 'otp': '5312', 'user_type': 'Vendor'}
+2022-07-06 23:22:11,769 - hello_app - INFO - OTP Expire Now Time:2022-07-06 17:52:11.769085
+2022-07-06 23:22:11,770 - hello_app - INFO - OTP Time:2022-07-06 17:50:03
+2022-07-06 23:22:11,771 - hello_app - INFO - OTP Time min:2
+2022-07-06 23:22:47,860 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': 'Computer Sc.'}
+2022-07-06 23:22:47,861 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-06 23:22:47,874 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:25:09,831 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '$2b$10$LJJYwRCbQqGYpdDAB2zuSunGBwmgteG/Zxdp4ZR283PtGSQly7Rwq', 'user_type': 'vendor', 'department_type': 'Computer Sc.'}
+2022-07-06 23:25:09,832 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-06 23:25:09,848 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:25:20,447 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': 'Computer Sc.'}
+2022-07-06 23:25:20,448 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-06 23:25:20,459 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:40:29,899 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 23:40:29,914 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-06 23:40:30,023 - hello_app - ERROR - UserService:custom_login:error:Invalid salt
+2022-07-06 23:43:08,825 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 23:43:08,857 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-06 23:43:08,929 - hello_app - ERROR - Users:CustomLogin:post::error:Invalid salt
+2022-07-06 23:45:10,424 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-06 23:45:10,447 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-07 00:09:09,718 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 00:09:09,719 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-07 00:09:54,318 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 00:09:54,319 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-07 00:11:45,349 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-07 00:12:11,870 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '4733', 'user_type': 'Vendor'}
+2022-07-07 00:12:11,914 - hello_app - INFO - OTP Expire Now Time:2022-07-06 18:42:11.914131
+2022-07-07 00:12:11,917 - hello_app - INFO - OTP Time:2022-07-06 18:41:45
+2022-07-07 00:12:11,922 - hello_app - INFO - OTP Time min:0
+2022-07-07 00:24:48,597 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 00:24:48,600 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-07 00:27:49,873 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 00:27:49,877 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-07 00:45:34,370 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-07 00:59:29,987 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-07 01:00:24,043 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram1@gmail.com', 'otp': '3503', 'user_type': 'Vendor'}
+2022-07-07 01:00:24,101 - hello_app - INFO - OTP Expire Now Time:2022-07-06 19:30:24.101956
+2022-07-07 01:00:24,193 - hello_app - INFO - OTP Time:2022-07-06 19:29:30
+2022-07-07 01:00:24,194 - hello_app - INFO - OTP Time min:0
+2022-07-07 01:00:38,304 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 01:00:38,305 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-07 01:01:35,337 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram1@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 01:01:35,338 - hello_app - INFO - custom login with email washimakram1@gmail.com
+2022-07-07 01:17:39,015 - hello_app - INFO - Users:get:current_user_id:13
+2022-07-07 01:17:39,015 - hello_app - INFO - fetch user: 13
+2022-07-07 01:18:22,739 - hello_app - INFO - Users:get:current_user_id:13
+2022-07-07 01:20:12,777 - hello_app - INFO - Users:get:current_user_id:13
+2022-07-07 01:20:12,783 - hello_app - INFO - fetch user: 13
+2022-07-07 01:20:50,056 - hello_app - INFO - Users:get:current_user_id:13
+2022-07-07 01:20:50,056 - hello_app - INFO - fetch user: 13
+2022-07-07 01:20:58,881 - hello_app - INFO - Users:get:current_user_id:13
+2022-07-07 01:23:24,691 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-07 01:23:48,659 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram2@gmail.com', 'otp': '1824', 'user_type': 'Vendor'}
+2022-07-07 01:23:48,681 - hello_app - INFO - OTP Expire Now Time:2022-07-06 19:53:48.681994
+2022-07-07 01:23:48,724 - hello_app - INFO - OTP Time:2022-07-06 19:53:25
+2022-07-07 01:23:48,725 - hello_app - INFO - OTP Time min:0
+2022-07-07 01:24:05,656 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-07 01:24:05,656 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-07 01:26:27,298 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-07 01:26:27,298 - hello_app - INFO - fetch user: 14
+2022-07-07 01:26:57,773 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-07 01:26:57,775 - hello_app - INFO - fetch user: 14
+2022-07-07 14:49:10,888 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-07 14:49:10,908 - hello_app - INFO - fetch user: 14
+2022-07-07 14:51:10,548 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-07 14:51:10,553 - hello_app - INFO - fetch user: 14
+2022-07-07 14:57:28,932 - hello_app - ERROR - Users:put::error 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-07-07 14:58:34,686 - hello_app - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-07 16:46:31,879 - hello_app - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-07 16:48:50,020 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 16:48:50,025 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 16:49:39,949 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 16:49:39,950 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 16:49:39,955 - hello_app - ERROR - Users:put::error 'UserService' object has no attribute 'update_user'
+2022-07-07 16:50:26,136 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 16:50:26,137 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 16:50:26,140 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 16:50:27,485 - hello_app - ERROR - UserService:update_user:: 'UserService' object has no attribute 'get_user_profiles'
+2022-07-07 16:52:12,567 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 16:52:12,568 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 16:52:12,571 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 16:52:12,761 - hello_app - ERROR - UserService:update_user:: argument of type 'UsersModel' is not iterable
+2022-07-07 16:58:34,210 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 16:58:34,214 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 16:58:34,218 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 16:58:34,432 - hello_app - ERROR - UserService:update_user:: argument of type 'UsersModel' is not iterable
+2022-07-07 17:28:23,086 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:28:23,113 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:28:48,078 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:28:48,080 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:29:10,224 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-07 17:29:10,226 - hello_app - INFO - fetch user: 14
+2022-07-07 17:29:17,427 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:29:17,427 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:29:46,863 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:29:46,866 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:29:50,535 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:29:50,536 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:30:11,721 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:30:11,722 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:30:41,333 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:30:41,333 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:33:15,917 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:33:15,918 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:33:15,920 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:34:31,591 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:34:31,594 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:34:31,600 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:34:32,240 - hello_app - ERROR - UserService:update_user:: 'UserService' object has no attribute 'get_user_profiles'
+2022-07-07 17:37:53,487 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:37:53,488 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:37:53,490 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:37:53,745 - hello_app - ERROR - Users:put::error 'UserService' object has no attribute 'get_user_profiles'
+2022-07-07 17:38:10,422 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:38:10,423 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:38:10,425 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:38:10,560 - hello_app - ERROR - Users:put::error 'UserService' object has no attribute 'get_user_profiles'
+2022-07-07 17:41:07,000 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:41:07,001 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:41:07,013 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:41:07,183 - hello_app - ERROR - Users:put::error argument of type 'UsersModel' is not iterable
+2022-07-07 17:46:17,305 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 17:46:17,308 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 17:46:17,311 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 17:46:17,512 - hello_app - ERROR - Users:put::error argument of type 'UsersModel' is not iterable
+2022-07-07 18:38:05,140 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:38:05,162 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:38:05,167 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 18:38:05,603 - hello_app - ERROR - Users:put::error argument of type 'UsersModel' is not iterable
+2022-07-07 18:41:23,480 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:41:23,482 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:41:23,485 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 18:41:23,580 - hello_app - ERROR - Users:put::error name 'u_data' is not defined
+2022-07-07 18:43:47,342 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:43:47,365 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:43:47,366 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 18:46:44,576 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:46:44,581 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:46:44,593 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 18:46:44,623 - hello_app - ERROR - Users:put::error argument of type 'UsersModel' is not iterable
+2022-07-07 18:49:00,436 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:49:00,436 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:49:00,444 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 18:49:00,469 - hello_app - ERROR - Users:put::error argument of type 'UsersModel' is not iterable
+2022-07-07 18:49:56,752 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:49:56,754 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:57:17,645 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 18:57:17,648 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 18:57:17,654 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 19:03:05,611 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 19:03:05,612 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 19:03:05,614 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 19:04:33,688 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 19:04:33,689 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 19:04:33,694 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 19:05:18,333 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 19:05:18,335 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 19:05:18,340 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 19:06:28,232 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 19:06:28,233 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 19:06:28,235 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 19:06:28,246 - hello_app - ERROR - Users:put::error 'UsersModel' object is not subscriptable
+2022-07-07 23:31:58,674 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 23:31:58,692 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 23:31:58,693 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 23:31:58,701 - hello_app - ERROR - UserService:update_user:: Class 'builtins.dict' is not mapped
+2022-07-07 23:32:59,845 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-07 23:32:59,849 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-07 23:32:59,854 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
+2022-07-07 23:32:59,871 - hello_app - ERROR - Users:put::error Class 'builtins.dict' is not mapped
