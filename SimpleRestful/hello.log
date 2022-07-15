@@ -263,3 +263,115 @@
 2022-07-07 23:32:59,849 - hello_app - INFO - Users:CustomLogin::put:user_id:14
 2022-07-07 23:32:59,854 - hello_app - INFO - UserService:update_user:data: {'first_name': 'washim'}
 2022-07-07 23:32:59,871 - hello_app - ERROR - Users:put::error Class 'builtins.dict' is not mapped
+2022-07-08 11:01:02,582 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-08 11:01:02,598 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-08 11:01:02,605 - hello_app - ERROR - Users:put::error name 'data' is not defined
+2022-07-08 11:02:45,325 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-08 11:02:45,327 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-08 11:02:45,329 - hello_app - ERROR - Users:put::error 'UserService' object has no attribute 'update_user'
+2022-07-08 11:18:53,849 - hello_app - ERROR - Users:put::error UserService.update_user() missing 1 required positional argument: 'data'
+2022-07-08 11:19:20,678 - hello_app - ERROR - Users:put::error UserService.update_user() missing 1 required positional argument: 'data'
+2022-07-08 11:19:59,496 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-08 11:23:26,969 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-08 11:23:26,970 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-08 13:57:53,431 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-08 13:57:53,454 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-08 13:58:13,660 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Expecting ':' delimiter: line 1 column 8 (char 7)
+2022-07-08 13:58:23,253 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-08 13:58:23,256 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:40:53,988 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-13 14:40:54,297 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:48:22,244 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-13 14:48:22,280 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:48:25,409 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-07-13 14:48:25,413 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:52:57,481 - hello_app - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-13 14:53:26,078 - hello_app - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-13 14:55:10,106 - hello_app - INFO - Users::put::request_body::{'first_name': 'washim'}
+2022-07-13 14:55:10,111 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:55:10,113 - hello_app - ERROR - Users:put::error 'data'
+2022-07-13 14:56:00,129 - hello_app - INFO - Users::put::request_body::{'first_name': 'washim'}
+2022-07-13 14:56:00,131 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 14:58:32,719 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "current_user_id"
+2022-07-13 14:59:12,382 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "current_user_id"
+2022-07-13 14:59:47,992 - hello_app - INFO - Users::put::request_body::{'first_name': 'washim'}
+2022-07-13 14:59:47,992 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 15:01:38,770 - hello_app - INFO - Users::put::request_body::{'first_name': 'washim'}
+2022-07-13 15:01:38,775 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 22:47:16,844 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 22:47:16,885 - hello_app - INFO - fetch user: 14
+2022-07-13 22:55:34,539 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 22:57:33,446 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 22:57:56,404 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 22:57:56,406 - hello_app - INFO - fetch user: 14
+2022-07-13 22:58:39,167 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 22:58:39,170 - hello_app - INFO - fetch user: 14
+2022-07-13 22:58:57,141 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 22:59:41,119 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 23:00:06,274 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 23:00:31,416 - hello_app - ERROR - Users:put::error 400 Bad Request: Failed to decode JSON object: Extra data: line 1 column 8 (char 7)
+2022-07-13 23:02:05,836 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:02:05,853 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:02:38,879 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:02:38,886 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:02:38,910 - hello_app - ERROR - Users:put::error 'UsersModel' object is not subscriptable
+2022-07-13 23:02:51,292 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:02:51,293 - hello_app - INFO - fetch user: 14
+2022-07-13 23:02:57,375 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:02:57,379 - hello_app - INFO - fetch user: 14
+2022-07-13 23:05:12,714 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:05:12,716 - hello_app - INFO - fetch user: 14
+2022-07-13 23:05:16,269 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:05:16,270 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:05:16,275 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "current_user_id"
+2022-07-13 23:08:53,543 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:08:53,546 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:08:53,548 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "current_user_id"
+2022-07-13 23:10:06,500 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:10:06,502 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:10:06,506 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:10:13,012 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:10:13,013 - hello_app - INFO - fetch user: 14
+2022-07-13 23:11:33,427 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-13 23:11:33,432 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:11:33,436 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:11:48,420 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:11:48,424 - hello_app - INFO - fetch user: 14
+2022-07-13 23:16:30,715 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-13 23:16:30,717 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:16:30,721 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:16:49,610 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-13 23:16:49,612 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:16:49,614 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:16:54,554 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-13 23:16:54,554 - hello_app - INFO - fetch user: 14
+2022-07-13 23:17:11,006 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:17:11,007 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:17:11,045 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:31:02,763 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:31:02,768 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:31:02,810 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:31:51,059 - hello_app - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-13 23:32:42,621 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:32:42,622 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:32:42,625 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:33:48,455 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:33:48,460 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:33:48,471 - hello_app - ERROR - Users:put::error Entity namespace for "users" has no property "user_id"
+2022-07-13 23:34:43,672 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:34:43,674 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:34:45,812 - hello_app - ERROR - Users:put::error 'UsersModel' object has no attribute 'json'
+2022-07-13 23:35:59,126 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram'}}
+2022-07-13 23:35:59,129 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-13 23:38:07,465 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-13 23:38:07,484 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-14 00:17:40,591 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-14 00:17:40,623 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-14 00:18:00,739 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'mazhar'}}
+2022-07-14 00:18:00,740 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-14 00:18:36,486 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim akram', 'last_name': 'mazhar'}}
+2022-07-14 00:18:36,487 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-14 00:45:09,659 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'mazhar'}}
+2022-07-14 00:45:09,673 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-14 00:45:20,633 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-14 00:45:20,638 - hello_app - INFO - Users:CustomLogin::put:user_id:14

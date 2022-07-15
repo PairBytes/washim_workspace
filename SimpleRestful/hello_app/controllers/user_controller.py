@@ -1,13 +1,13 @@
 from unicodedata import name
 import urllib.request
-from hello_app.decorators.authenticated import authenticated
+from hello_app.decorators.authenticated import authenticated, emb_authenticated
 from flask_restful import Resource, reqparse
 from hello_app.helper.rest_response import RestResponse
 from hello_app import app
 from hello_app.services.user_service import UserService
 from flask import request
 from hello_app.models.user_model import UsersModel
-
+from hello_app import db
 
 
 class Users(Resource):
@@ -46,36 +46,22 @@ class Users(Resource):
             return RestResponse(err='Something went wrong').to_json(), 500
     @authenticated()
     def put(self, current_user_id):
-        # try:
-        #     parser = reqparse.RequestParser()
-        #     parser.add_argument('data', type=dict, help='User data can not be blank', required=True)
-        #     args = parser.parse_args()
-        #     app.logger.info("Users::put::request_body::{}".format(args))
-
-        #     app.logger.info("Users:CustomLogin::put:user_id:{}".format(current_user_id))
-        #     return UserService().update_user(current_user_id, args['data'])
-
-        # except Exception as e:
-        #     app.logger.error("Users:put::error {}".format(e))
-        #     return RestResponse(err=str(e)).to_json(), 500
-        # data = request.get_json()
-        # user = UsersModel.query.filter_by(email=email).first()
-        # if user:
-        #     user.first_name = data["first_name"]
-        # else:
-        #     user = UsersModel(email=email,**data)
-        # db.session.add(user)
-        # db.session.commit()
- 
-        # return user.json()
+        
+        print('current user id :', current_user_id)
         try:
             parser = reqparse.RequestParser()
+            print('parser:',parser)
             parser.add_argument('data', type=dict, help='User data can not be blank', required=True)
             args = parser.parse_args()
+            print('args:',args)
             app.logger.info("Users::put::request_body::{}".format(args))
 
             app.logger.info("Users:CustomLogin::put:user_id:{}".format(current_user_id))
             return UserService().update_user(current_user_id, args['data'])
+            # return UserService().update_user(current_user_id)
+
+            
+
 
         except Exception as e:
             app.logger.error("Users:put::error {}".format(e))
@@ -124,3 +110,27 @@ class ValidateEmailOTP(Resource):
         except Exception as e:
             app.logger.error("ValidateEmailOTP::post::error:{}".format(e))
             return RestResponse(err='Something went wrong').to_json(), 500
+
+
+class UserSearch(Resource):
+    # @emb_authenticated()
+    def get(self, current_user_id, user_type=None):
+        # try:
+        app.logger.info("Users:UserSearch:get:user_id:{}".format(current_user_id))
+        parser = reqparse.RequestParser()
+        parser.add_argument('query', type=str, help='Query can not be blank', required=True)
+        parser.add_argument('page', type=int, default=1)
+        parser.add_argument('limit', type=int, default=10)
+        args = parser.parse_args()
+        print("args:",args)
+        app.logger.debug("Users:UserSearch::get::params::{}".format(args))
+        if not args['query']:
+            return RestResponse([], err='Query can not be blank').to_json(), 400
+        if not type:
+            return RestResponse([], err='UserType can not be blank').to_json(), 400
+
+        return UserService().user_search(current_user_id, user_type.strip(), args['query'].strip(), args['page'],
+                                            args['limit'])
+        # except Exception as e:
+        #     app.logger.error("Users:UserSearch::get:error:{}".format(str(e)))
+        #     return RestResponse([], err=str(e)).to_json(), 500

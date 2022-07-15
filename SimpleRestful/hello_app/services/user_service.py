@@ -3,13 +3,16 @@ import pytz
 import random
 import string
 import uuid
+
+from sqlalchemy import false
 from hello_app.models.user_model import UsersModel
 from hello_app.models.user_varification_model import UsrVerificationModel
 from hello_app.helper.rest_response import RestResponse
 from hello_app import app
 from flask_jwt_extended import create_access_token
 from hello_app import db
-
+from flask import request
+from hello_app.models.user_model import UsersModel
 
 
 
@@ -154,23 +157,66 @@ class UserService:
             return RestResponse(err=str(e)).to_json(), 500
 
     def update_user(self, user_id, data):
-        # app.logger.info("UserService:update_user:data: {}".format(data))
-        # data = UsersModel.find_by_id(user_id = user_id)
-        # print('User',data)
-        # if data:
-        #     data.first_name = data["first_name"]
-        # else:
-        #     data = UsersModel(user_id = user_id,**data)
-        # db.session.add(data)
-        # db.session.commit()
-        # try:
-            # app.logger.info("UserService:update_user:data: {}".format(str(data)))
-            # user = UsersModel.find_by_id(user_id)
-            # user = user.to_json()
-            # db.session.add(data)
-            # db.session.commit()
-            # return RestResponse(user, message="Your profile has been updated successfully", status=1).to_json(), 200
+        print("user id:",user_id)
+        
+        print("data:",data)
+        # data = BookView.parser.parse_args()
+ 
+        user = UsersModel.find_by_id(user_id)
+        print("user:",user)
+        is_update = False
+        if user:
+            columns = [col.name for col in user.__table__.columns if col.name != 'password']
+            for u_data in data:
+                if u_data in columns:
+                    setattr(user, u_data, data[u_data])
+                    is_update = True
+            if is_update:
+                user.updated_by = user.id
+                user.updated_at = datetime.utcnow()
+                user.save() 
+        return user.to_json()
 
+    def user_search(self, user_id, user_type, query, page_count, limit):
+        pass
+        # try:
+        #     res = []
+        #     app.logger.info("UserService:user_search:user_id: {}".format(user_id))
+        #     user = UsersModel.find_by_id(user_id)
+        #     if user:
+        #         if page_count < 1:
+        #             return RestResponse([], err="Invalid Page count").to_json(), 400
+        #         page = page_count - 1
+        #         total = UsersModel.query.filter(
+        #             UsersModel.first_name.like('%' + query + '%') | UsersModel.last_name.like(
+        #                 '%' + query + '%'), UsersModel.user_type == user_type, UsersModel.active == True).count()
+        #         users = UsersModel.query.filter(
+        #             UsersModel.first_name.like('%' + query + '%') | UsersModel.last_name.like(
+        #                 '%' + query + '%'), UsersModel.user_type == user_type, UsersModel.active == True).offset(
+        #             page * limit).limit(limit).all()
+        #         for user in users:
+        #             if user.userid in app.config['PROJECT_ASSIGNOR']:
+        #                 is_assign_project = True
+        #             else:
+        #                 is_assign_project = False
+        #             res.append({
+        #                 'id': user.id,
+        #                 'userid': user.userid,
+        #                 'first_name': user.first_name,
+        #                 'last_name': user.last_name,
+        #                 'profile_pic': user.profile_pic,
+        #                 'email': user.email,
+        #                 'country_code': user.country_code,
+        #                 'mobile_number': user.mobile_number,
+        #                 'email_verify': user.email_verify,
+        #                 'mobile_verify': user.mobile_verify,
+        #                 'is_assign_project': is_assign_project
+        #             })
+        #         return RestResponse(res, status=1, page=1, total=total).to_json(), 200
+        #     else:
+        #         app.logger.error("UserService:user_search:user_id:{} is not found".format(user_id))
+        #         return RestResponse(err='User Not Found!').to_json(), 400
         # except Exception as e:
-        #     app.logger.error("UserService:update_user:: {}".format(str(e)))
+        #     app.logger.error("UserService:user_search:error: {}".format(str(e)))
         #     return RestResponse(err=str(e)).to_json(), 500
+
