@@ -375,3 +375,160 @@
 2022-07-14 00:45:09,673 - hello_app - INFO - Users:CustomLogin::put:user_id:14
 2022-07-14 00:45:20,633 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
 2022-07-14 00:45:20,638 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-24 17:50:27,744 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:50:27,764 - hello_app - INFO - fetch user: 14
+2022-07-24 17:50:52,237 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-24 17:50:52,262 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-24 17:53:40,282 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram2@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-24 17:53:40,285 - hello_app - INFO - custom login with email washimakram2@gmail.com
+2022-07-24 17:54:33,429 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:54:33,430 - hello_app - INFO - fetch user: 14
+2022-07-24 17:55:16,474 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:55:16,475 - hello_app - INFO - fetch user: 14
+2022-07-24 17:55:38,413 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:55:38,413 - hello_app - INFO - fetch user: 14
+2022-07-24 17:59:25,642 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:59:25,666 - hello_app - INFO - fetch user: 14
+2022-07-24 17:59:33,682 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:59:33,683 - hello_app - INFO - fetch user: 14
+2022-07-24 17:59:45,987 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 17:59:45,988 - hello_app - INFO - fetch user: 14
+2022-07-24 18:00:16,202 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:00:16,250 - hello_app - INFO - fetch user: 14
+2022-07-24 18:00:30,175 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:00:30,175 - hello_app - INFO - fetch user: 14
+2022-07-24 18:00:38,552 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:00:38,553 - hello_app - INFO - fetch user: 14
+2022-07-24 18:00:43,044 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:00:43,045 - hello_app - INFO - fetch user: 14
+2022-07-24 18:00:44,773 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:00:44,774 - hello_app - INFO - fetch user: 14
+2022-07-24 18:07:26,857 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:07:26,857 - hello_app - INFO - fetch user: 14
+2022-07-24 18:08:19,633 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-24 18:08:19,633 - hello_app - INFO - fetch user: 14
+2022-07-25 10:20:04,200 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:20:04,231 - hello_app - INFO - fetch user: 14
+2022-07-25 10:27:01,703 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:27:01,704 - hello_app - INFO - fetch user: 14
+2022-07-25 10:27:05,419 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:27:05,420 - hello_app - INFO - fetch user: 14
+2022-07-25 10:29:56,481 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram'}}
+2022-07-25 10:29:56,482 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-25 10:30:19,455 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:30:19,456 - hello_app - INFO - fetch user: 14
+2022-07-25 10:30:55,355 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram3@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-25 10:31:28,058 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram2@gmail.com', 'otp': '4796', 'user_type': 'Vendor'}
+2022-07-25 10:31:40,696 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram3@gmail.com', 'otp': '4796', 'user_type': 'Vendor'}
+2022-07-25 10:31:40,702 - hello_app - INFO - OTP Expire Now Time:2022-07-25 05:01:40.702203
+2022-07-25 10:31:40,705 - hello_app - INFO - OTP Time:2022-07-25 05:00:55
+2022-07-25 10:31:40,708 - hello_app - INFO - OTP Time min:0
+2022-07-25 10:31:59,745 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram3@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-25 10:31:59,746 - hello_app - INFO - custom login with email washimakram3@gmail.com
+2022-07-25 10:32:35,683 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:32:35,684 - hello_app - INFO - fetch user: 15
+2022-07-25 10:32:45,003 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:32:51,626 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:32:51,628 - hello_app - INFO - fetch user: 15
+2022-07-25 10:33:10,106 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'uday', 'last_name': 'kumar'}}
+2022-07-25 10:33:10,109 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-25 10:34:28,407 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:34:28,407 - hello_app - INFO - fetch user: 14
+2022-07-25 10:35:54,713 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:35:54,714 - hello_app - INFO - fetch user: 14
+2022-07-25 10:38:29,609 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:38:29,609 - hello_app - INFO - fetch user: 15
+2022-07-25 10:39:20,470 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:39:20,471 - hello_app - INFO - fetch user: 15
+2022-07-25 10:39:32,535 - hello_app - INFO - Users:get:current_user_id:15
+2022-07-25 10:39:32,536 - hello_app - INFO - fetch user: 15
+2022-07-25 10:40:47,320 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:40:47,320 - hello_app - INFO - fetch user: 14
+2022-07-25 10:41:14,050 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:41:14,135 - hello_app - INFO - fetch user: 14
+2022-07-25 10:42:21,152 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'uday', 'last_name': 'kumar'}}
+2022-07-25 10:42:21,154 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-25 10:42:25,413 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:42:25,415 - hello_app - INFO - fetch user: 14
+2022-07-25 10:42:46,549 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:42:46,550 - hello_app - INFO - fetch user: 14
+2022-07-25 10:48:47,364 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:48:47,366 - hello_app - INFO - fetch user: 14
+2022-07-25 10:49:41,883 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:49:41,884 - hello_app - INFO - fetch user: 14
+2022-07-25 10:53:35,421 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 10:53:35,427 - hello_app - INFO - fetch user: 14
+2022-07-25 11:02:50,809 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:02:50,827 - hello_app - INFO - fetch user: 14
+2022-07-25 11:02:56,711 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:02:56,711 - hello_app - INFO - fetch user: 14
+2022-07-25 11:08:36,895 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:08:36,906 - hello_app - INFO - fetch user: 14
+2022-07-25 11:09:08,545 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:09:08,546 - hello_app - INFO - fetch user: 14
+2022-07-25 11:14:00,668 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:14:00,669 - hello_app - INFO - fetch user: 14
+2022-07-25 11:16:02,066 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:16:02,067 - hello_app - INFO - fetch user: 14
+2022-07-25 11:20:38,099 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:20:38,122 - hello_app - INFO - fetch user: 14
+2022-07-25 11:20:48,074 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-25 11:20:48,075 - hello_app - INFO - fetch user: 14
+2022-07-28 21:47:04,268 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washimakram4@gmail.com', 'password': '1234', 'user_type': 'vendor', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-07-28 21:47:31,436 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram3@gmail.com', 'otp': '7309', 'user_type': 'Vendor'}
+2022-07-28 21:47:45,664 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washimakram4@gmail.com', 'otp': '7309', 'user_type': 'Vendor'}
+2022-07-28 21:47:45,668 - hello_app - INFO - OTP Expire Now Time:2022-07-28 16:17:45.668138
+2022-07-28 21:47:45,669 - hello_app - INFO - OTP Time:2022-07-28 16:17:05
+2022-07-28 21:47:45,670 - hello_app - INFO - OTP Time min:0
+2022-07-28 21:48:02,627 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washimakram4@gmail.com', 'password': '1234', 'user_type': 'vendor', 'department_type': None}
+2022-07-28 21:48:02,628 - hello_app - INFO - custom login with email washimakram4@gmail.com
+2022-07-28 21:48:29,029 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-28 21:48:29,030 - hello_app - INFO - fetch user: 16
+2022-07-28 21:48:52,768 - hello_app - INFO - Users::put::request_body::{'data': {'first_name': 'saqib', 'last_name': 'nawaz'}}
+2022-07-28 21:48:52,769 - hello_app - INFO - Users:CustomLogin::put:user_id:14
+2022-07-28 21:49:19,823 - hello_app - INFO - Users:get:current_user_id:14
+2022-07-28 21:49:19,825 - hello_app - INFO - fetch user: 14
+2022-07-28 21:49:47,381 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-28 21:49:47,383 - hello_app - INFO - fetch user: 16
+2022-07-28 21:50:02,651 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-28 21:50:02,652 - hello_app - INFO - fetch user: 16
+2022-07-28 21:51:44,081 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-28 21:51:44,181 - hello_app - INFO - fetch user: 16
+2022-07-28 22:14:35,538 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:14:35,589 - hello_app - ERROR - Users:UserSearch::get:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-07-28 22:15:11,347 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:15:11,348 - hello_app - ERROR - Users:UserSearch::get:error:400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+2022-07-28 22:16:27,079 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:16:27,080 - hello_app - ERROR - Users:UserSearch::get:error:400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+2022-07-28 22:50:39,052 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:51:21,110 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:52:16,068 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:52:45,060 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-28 22:53:52,173 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 09:53:14,076 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 09:56:53,066 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 09:56:53,073 - hello_app - DEBUG - Users:UserSearch::get::params::{'query': 'washim'}
+2022-07-29 09:57:07,379 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 09:57:07,384 - hello_app - DEBUG - Users:UserSearch::get::params::{'query': 'washim'}
+2022-07-29 09:57:13,750 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 09:58:09,278 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:01:10,064 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-29 10:03:00,369 - hello_app - INFO - Users:get:current_user_id:16
+2022-07-29 10:04:56,385 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:07:27,573 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:08:25,179 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:09:03,861 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:09:52,939 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:10:11,569 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:14:35,858 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:15:20,119 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:15:24,161 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:16:30,747 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:20:25,119 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:20:39,059 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:34:20,035 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:38:04,202 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:40:19,943 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:41:03,872 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:41:51,079 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-07-29 10:50:13,462 - hello_app - INFO - Users:UserSearch:get:user_id:16

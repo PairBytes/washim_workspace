@@ -1,4 +1,5 @@
 from ast import arg
+from traceback import print_tb
 from unicodedata import name
 import urllib.request
 from hello_app.decorators.authenticated import authenticated, emb_authenticated
@@ -110,19 +111,27 @@ class ValidateEmailOTP(Resource):
 class UserSearch(Resource):
     @authenticated()
     def get(self, current_user_id):
-        try:
+        # try:
             app.logger.info("Users:UserSearch:get:user_id:{}".format(current_user_id))
             parser = reqparse.RequestParser()
+            print('parser:',parser)
             parser.add_argument('query', type=str, help='Query can not be blank', required=True)
-            parser.add_argument('page', type=int, default=1)
-            parser.add_argument('limit', type=int, default=10)
+            # parser.add_argument('page', type=int, default=1)
+            # parser.add_argument('limit', type=int, default=10)
+            print('current user id:', current_user_id)
+            print('current user id:', current_user_id)
             args = parser.parse_args()
+            print('current user id:', current_user_id)
+            print('args:')
 
             app.logger.debug("Users:UserSearch::get::params::{}".format(args))
             if not args['query']:
                 return RestResponse([], err='Query can not be blank').to_json(), 400
 
             return UserService().user_search(current_user_id, args['query'].strip(), args['page'], args['limit'])
-        except Exception as e:
-            app.logger.error("Users:UserSearch::get:error:{}".format(str(e)))
-            return RestResponse([], err=str(e)).to_json(), 500
+        # except Exception as e:
+        #     app.logger.error("Users:UserSearch::get:error:{}".format(str(e)))
+        #     return RestResponse([], err=str(e)).to_json(), 500
+
+class UserSearchByMail(Resource):
+    pass

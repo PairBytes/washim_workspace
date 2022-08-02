@@ -177,10 +177,11 @@ class UserService:
             return RestResponse(err=str(e)).to_json(), 500
 
     def user_search(self, user_id, query, page_count, limit):
-        try:
+        # try:
             res = []
             app.logger.info("UserService:user_search:user_id: {}".format(user_id))
             user = UsersModel.find_by_id(user_id)
+            print('user:',user)
             if user:
                 if page_count < 1:
                     return RestResponse([], err="Invalid Page count").to_json(), 400
@@ -188,9 +189,11 @@ class UserService:
                 total = UsersModel.query.filter(
                     UsersModel.first_name.like('%' + query + '%') | UsersModel.last_name.like(
                         '%' + query + '%'), UsersModel.active == True).count()
+                print('total:',total)
                 users = UsersModel.query.filter(
                     UsersModel.first_name.like('%' + query + '%') | UsersModel.last_name.like(
                         '%' + query + '%'), UsersModel.active == True).offset(page * limit).limit(limit).all()
+                print('users:',users)
 
                 for user in users:
                     res.append({
@@ -209,7 +212,7 @@ class UserService:
             else:
                 app.logger.error("UserService:user_search:user_id:{} is not found".format(user_id))
                 return RestResponse(err='User Not Found!').to_json(), 400
-        except Exception as e:
-            app.logger.error("UserService:user_search:error: {}".format(str(e)))
-            return RestResponse(err=str(e)).to_json(), 500
+        # except Exception as e:
+        #     app.logger.error("UserService:user_search:error: {}".format(str(e)))
+        #     return RestResponse(err=str(e)).to_json(), 500
 
