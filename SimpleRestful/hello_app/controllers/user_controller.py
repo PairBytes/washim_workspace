@@ -135,3 +135,9 @@ class UserSearch(Resource):
 
 class UserSearchByMail(Resource):
     pass
+
+
+
+class FileUpload(Resource):
+    def post(self):
+        return UserService().upload_file()
