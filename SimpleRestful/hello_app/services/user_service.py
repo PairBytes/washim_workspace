@@ -13,7 +13,8 @@ from flask_jwt_extended import create_access_token
 from hello_app import db
 from flask import request, jsonify
 from hello_app.models.user_model import UsersModel
-
+from werkzeug.utils import secure_filename
+import os
 
 
 class UserService:
@@ -218,25 +219,30 @@ class UserService:
 
 
 
-    ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
-
-    def allowed_file(filename):
-        return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
     
-    def upload_file():
-	# check if the post request has the file part
+    def upload_file(self, file):
+        print('Request:',request)
+        ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+
+        def allowed_file(filename):
+            print('filename:',filename)
+            return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+            
         if 'file' not in request.files:
             resp = jsonify({'message' : 'No file part in the request'})
             resp.status_code = 400
             return resp
         file = request.files['file']
+        print('file:',file)
         if file.filename == '':
             resp = jsonify({'message' : 'No file selected for uploading'})
             resp.status_code = 400
             return resp
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            print('filename:',filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            # print('F:',f)
             resp = jsonify({'message' : 'File successfully uploaded'})
             resp.status_code = 201
             return resp

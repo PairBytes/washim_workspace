@@ -10,7 +10,7 @@ from hello_app.services.user_service import UserService
 from flask import request
 from hello_app.models.user_model import UsersModel
 from hello_app import db
-
+import werkzeug
 
 class Users(Resource):
 
@@ -140,4 +140,15 @@ class UserSearchByMail(Resource):
 
 class FileUpload(Resource):
     def post(self):
-        return UserService().upload_file()
+        parse = reqparse.RequestParser()
+        print('Parse:',reqparse)
+        parse.add_argument('file', type=werkzeug.datastructures.FileStorage, location='files')
+        args = parse.parse_args()
+        print('Args:',args)
+        image_file = args['file']
+        print('image file:', image_file)
+        return UserService().upload_file(args['file'])
+
+
+
+

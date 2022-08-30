@@ -39,7 +39,7 @@ from flask import request, jsonify
 import jwt
 
 
-UPLOAD_FOLDER = 'C:/uploads'
+UPLOAD_FOLDER = 'D:/workspace/washim_workspace/Upload'
 app.secret_key = "secret key"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
