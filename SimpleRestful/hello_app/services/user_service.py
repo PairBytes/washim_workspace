@@ -242,7 +242,7 @@ class UserService:
             filename = secure_filename(file.filename)
             print('filename:',filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            # print('F:',f)
+            print('File Location:',os.path.join(app.config['UPLOAD_FOLDER'], filename))
             resp = jsonify({'message' : 'File successfully uploaded'})
             resp.status_code = 201
             return resp

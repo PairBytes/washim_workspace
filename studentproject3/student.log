@@ -1,0 +1,263 @@
+2022-09-01 12:47:30,007 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-01 12:49:29,420 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-01 13:00:00,480 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim@gmail.com', 'otp': '8134', 'user_type': 'student'}
+2022-09-01 13:00:00,518 - student - INFO - OTP Expire Now Time:2022-09-01 07:30:00.518118
+2022-09-01 13:00:00,521 - student - INFO - OTP Time:2022-09-01 07:19:29
+2022-09-01 13:00:00,525 - student - INFO - OTP Time min:10
+2022-09-01 13:01:21,664 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim@gmail.com', 'otp': '8134', 'user_type': 'student'}
+2022-09-01 13:01:21,710 - student - INFO - OTP Expire Now Time:2022-09-01 07:31:21.710586
+2022-09-01 13:01:21,712 - student - INFO - OTP Time:2022-09-01 07:19:29
+2022-09-01 13:01:21,714 - student - INFO - OTP Time min:11
+2022-09-01 13:02:23,885 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim@gmail.com', 'otp': '8134', 'user_type': 'student'}
+2022-09-01 13:02:23,923 - student - INFO - OTP Expire Now Time:2022-09-01 07:32:23.923032
+2022-09-01 13:02:23,927 - student - INFO - OTP Time:2022-09-01 07:19:29
+2022-09-01 13:02:23,932 - student - INFO - OTP Time min:12
+2022-09-01 13:03:27,216 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim@gmail.com', 'otp': '8134', 'user_type': 'student'}
+2022-09-01 13:03:27,245 - student - INFO - OTP Expire Now Time:2022-09-01 07:33:27.245689
+2022-09-01 13:03:27,247 - student - INFO - OTP Time:2022-09-01 07:19:29
+2022-09-01 13:03:27,254 - student - INFO - OTP Time min:13
+2022-09-01 13:46:01,587 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 13:46:48,549 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 13:46:48,550 - student - INFO - custom login with email washim@gmail.com
+2022-09-01 13:46:48,954 - student - ERROR - UserService:custom_login:error:'StudentModel' object has no attribute 'to_json_access_token'
+2022-09-01 13:48:25,994 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 13:48:25,996 - student - INFO - custom login with email washim@gmail.com
+2022-09-01 13:52:02,836 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 13:52:02,837 - student - INFO - custom login with email washim@gmail.com
+2022-09-01 13:54:19,278 - student - INFO - Users:get:current_user_id:1
+2022-09-01 13:54:19,279 - student - INFO - fetch user: 1
+2022-09-01 19:43:32,645 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 19:43:32,666 - student - INFO - custom login with email washim2@gmail.com
+2022-09-01 19:44:03,174 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-01 19:45:46,320 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim2@gmail.com', 'otp': '9222', 'user_type': 'student'}
+2022-09-01 19:45:46,332 - student - INFO - OTP Expire Now Time:2022-09-01 14:15:46.332014
+2022-09-01 19:45:46,333 - student - INFO - OTP Time:2022-09-01 14:14:03
+2022-09-01 19:45:46,336 - student - INFO - OTP Time min:1
+2022-09-01 19:46:41,132 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 19:46:41,133 - student - INFO - custom login with email washim2@gmail.com
+2022-09-01 19:48:29,303 - student - INFO - Users:get:current_user_id:2
+2022-09-01 19:48:29,305 - student - INFO - fetch user: 2
+2022-09-01 19:48:37,360 - student - INFO - Users:get:current_user_id:2
+2022-09-01 19:48:41,765 - student - INFO - Users:get:current_user_id:2
+2022-09-01 19:48:41,767 - student - INFO - fetch user: 2
+2022-09-01 19:56:29,388 - student - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-09-01 19:57:28,788 - student - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-09-01 19:58:18,192 - student - INFO - Users:get:current_user_id:2
+2022-09-01 19:58:18,194 - student - INFO - fetch user: 2
+2022-09-01 19:58:28,238 - student - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-09-01 19:59:06,021 - student - ERROR - Users:put::error 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-09-01 20:00:37,554 - student - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'last_name': 'akram', 'mobile_number': '821080583'}}
+2022-09-01 20:00:37,563 - student - INFO - Users:CustomLogin::put:user_id:2
+2022-09-01 21:07:55,556 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim3@gmail.com', 'password': '123', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-01 21:09:07,128 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim3@gmail.com', 'otp': '4211', 'user_type': 'student'}
+2022-09-01 21:09:07,166 - student - INFO - OTP Expire Now Time:2022-09-01 15:39:07.166947
+2022-09-01 21:09:07,167 - student - INFO - OTP Time:2022-09-01 15:37:56
+2022-09-01 21:09:07,174 - student - INFO - OTP Time min:1
+2022-09-01 21:09:55,345 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim3@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-01 21:09:55,347 - student - INFO - custom login with email washim3@gmail.com
+2022-09-01 21:11:33,648 - student - INFO - Users:get:current_user_id:3
+2022-09-01 21:11:33,649 - student - INFO - fetch user: 3
+2022-09-01 21:13:03,375 - student - INFO - Users::put::request_body::{'data': {'first_name': 'washim'}}
+2022-09-01 21:13:03,380 - student - INFO - Users:CustomLogin::put:user_id:3
+2022-09-03 13:04:11,839 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-03 13:04:11,859 - student - INFO - custom login with email washim@gmail.com
+2022-09-03 13:05:37,739 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:15:05,444 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:15:05,542 - student - ERROR - ForgotPassword::post::error:type object 'datetime.datetime' has no attribute 'datetime'
+2022-09-03 13:15:43,590 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:16:38,158 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:20:37,474 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:22:08,958 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:27:07,965 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:29:19,439 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:31:06,608 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:31:49,200 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:32:10,478 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:32:51,149 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:33:06,504 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:41:27,065 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:42:02,855 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:43:02,897 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:43:26,799 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:43:54,865 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:45:34,149 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:46:19,323 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:47:58,024 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:49:39,851 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:57:08,164 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:57:24,565 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 13:58:36,936 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 14:04:48,517 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-03 14:05:48,359 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim3@gmail.com'}
+2022-09-05 12:55:36,579 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-05 12:57:01,300 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-05 12:57:01,301 - student - INFO - custom login with email washim@gmail.com
+2022-09-05 14:16:06,251 - student - INFO - Users:get:current_user_id:3
+2022-09-05 14:16:06,273 - student - INFO - fetch user: 3
+2022-09-05 14:24:41,818 - student - INFO - Users:get:current_user_id:3
+2022-09-05 14:24:41,819 - student - INFO - fetch user: 3
+2022-09-05 14:24:44,031 - student - INFO - Users:get:current_user_id:3
+2022-09-05 14:24:44,032 - student - INFO - fetch user: 3
+2022-09-05 14:25:00,413 - student - INFO - Users:get:current_user_id:3
+2022-09-05 14:25:00,413 - student - INFO - fetch user: 3
+2022-09-05 14:49:09,850 - student - INFO - Users:get:current_user_id:3
+2022-09-05 14:49:09,882 - student - INFO - fetch user: 3
+2022-09-05 15:42:46,797 - student - INFO - Users:get:current_user_id:3
+2022-09-05 15:42:46,798 - student - INFO - fetch user: 3
+2022-09-05 15:42:52,245 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-05 15:42:52,246 - student - INFO - custom login with email washim@gmail.com
+2022-09-06 16:36:44,283 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-06 16:36:44,298 - student - INFO - custom login with email washim@gmail.com
+2022-09-06 16:37:09,263 - student - INFO - Users:get:current_user_id:1
+2022-09-06 16:37:09,264 - student - INFO - fetch user: 1
+2022-09-06 20:59:09,527 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-06 20:59:09,550 - student - INFO - custom login with email washim@gmail.com
+2022-09-06 20:59:40,598 - student - INFO - Users:get:current_user_id:1
+2022-09-06 20:59:40,599 - student - INFO - fetch user: 1
+2022-09-06 21:00:08,689 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:04:57,037 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:06:54,357 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:13:44,403 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:15:57,863 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:17:57,858 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:19:13,719 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:52:48,045 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:58:48,374 - student - INFO - Users:post:current_user_id:1
+2022-09-06 21:59:56,254 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:00:34,032 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:00:57,475 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:02:43,530 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:03:12,173 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:03:35,798 - student - INFO - Users:post:current_user_id:1
+2022-09-06 22:09:51,452 - student - INFO - Users:post:current_user_id:1
+2022-09-07 00:08:32,407 - student - INFO - Users:post:current_user_id:1
+2022-09-07 00:09:55,175 - student - INFO - Users:post:current_user_id:1
+2022-09-07 00:10:01,705 - student - INFO - Users:get:current_user_id:1
+2022-09-07 00:10:01,709 - student - INFO - fetch user: 1
+2022-09-07 00:10:14,970 - student - INFO - Users:get:current_user_id:1
+2022-09-07 00:10:14,971 - student - INFO - fetch user: 1
+2022-09-07 00:13:26,008 - student - INFO - Users:post:current_user_id:1
+2022-09-07 12:44:21,178 - student - INFO - Users:get:current_user_id:1
+2022-09-07 12:44:21,188 - student - INFO - fetch user: 1
+2022-09-07 12:44:28,224 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-07 12:44:28,227 - student - INFO - custom login with email washim@gmail.com
+2022-09-07 12:44:57,727 - student - INFO - Users:get:current_user_id:1
+2022-09-07 12:44:57,728 - student - INFO - fetch user: 1
+2022-09-07 12:45:04,042 - student - INFO - Users:post:current_user_id:1
+2022-09-07 13:06:34,569 - student - INFO - Users:post:current_user_id:1
+2022-09-07 14:13:10,708 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim4@gmail.com', 'password': '123', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-07 14:15:32,749 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim2@gmail.com', 'otp': '6963', 'user_type': 'student'}
+2022-09-07 14:16:30,676 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim4@gmail.com', 'otp': '6963', 'user_type': 'student'}
+2022-09-07 14:16:30,680 - student - INFO - OTP Expire Now Time:2022-09-07 08:46:30.680481
+2022-09-07 14:16:30,681 - student - INFO - OTP Time:2022-09-07 08:43:11
+2022-09-07 14:16:30,682 - student - INFO - OTP Time min:3
+2022-09-07 14:38:33,682 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123444', 'user_type': 'student', 'department_type': None}
+2022-09-07 14:38:33,695 - student - INFO - custom login with email washim@gmail.com
+2022-09-07 14:38:43,710 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim5555@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-07 14:38:43,743 - student - INFO - custom login with email washim5555@gmail.com
+2022-09-07 14:38:59,787 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim4@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-07 14:38:59,789 - student - INFO - custom login with email washim4@gmail.com
+2022-09-07 15:03:04,576 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:06:13,045 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:06:58,673 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:08:31,063 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:08:58,122 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:09:51,461 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:10:47,633 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:46:33,835 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:48:06,895 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:50:49,844 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:52:08,795 - student - INFO - Users:post:current_user_id:1
+2022-09-07 15:56:25,182 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:03:58,617 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:04:29,163 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:05:13,121 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:05:53,719 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:06:29,696 - student - INFO - Users:get:current_user_id:1
+2022-09-07 16:06:29,698 - student - INFO - fetch user: 1
+2022-09-07 16:07:37,860 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-07 16:07:37,866 - student - INFO - custom login with email washim@gmail.com
+2022-09-07 16:07:53,435 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:07:58,157 - student - INFO - Users:get:current_user_id:1
+2022-09-07 16:07:58,158 - student - INFO - fetch user: 1
+2022-09-07 16:08:28,971 - student - INFO - Users:get:current_user_id:1
+2022-09-07 16:08:28,973 - student - INFO - fetch user: 1
+2022-09-07 16:12:43,905 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:12:57,499 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:13:33,789 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:13:34,355 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:14:28,178 - student - INFO - Users:post:current_user_id:1
+2022-09-07 16:22:25,979 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:35:09,149 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim444@gmail.com'}
+2022-09-07 16:35:54,054 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim444@gmail.com'}
+2022-09-07 16:40:45,317 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim444@gmail.com'}
+2022-09-07 16:40:54,016 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:42:52,711 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:45:43,138 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:46:02,808 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:46:53,407 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:47:43,137 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:49:32,876 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:52:25,866 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:53:27,465 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:53:49,949 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 16:54:34,692 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 17:12:02,102 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 17:14:06,741 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:14:06,742 - student - ERROR - UserService:reset_password::error: StudentModel.find_by_email() missing 1 required positional argument: 'email'
+2022-09-07 17:14:37,279 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:15:03,452 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:15:27,470 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:15:27,471 - student - ERROR - ResetPassword::post:error:StudentService.reset_password() missing 1 required positional argument: 'password'
+2022-09-07 17:15:56,092 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:15:56,095 - student - ERROR - ResetPassword::post:error:StudentService.reset_password() missing 1 required positional argument: 'password'
+2022-09-07 17:20:33,328 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:20:33,330 - student - ERROR - ResetPassword::post:error:StudentService.reset_password() missing 1 required positional argument: 'email'
+2022-09-07 17:20:51,222 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:20:51,224 - student - ERROR - ResetPassword::post:error:StudentService.reset_password() missing 1 required positional argument: 'email'
+2022-09-07 17:21:59,013 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:21:59,015 - student - ERROR - ResetPassword::post:error:StudentService.reset_password() missing 1 required positional argument: 'email'
+2022-09-07 17:22:22,680 - student - DEBUG - Users:ResetPassword::post::body::{'password': '123456'}
+2022-09-07 17:24:55,452 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '123456'}
+2022-09-07 17:25:25,590 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '123456'}
+2022-09-07 17:25:41,902 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '123'}
+2022-09-07 18:03:34,541 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:06:17,816 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:06:44,929 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:07:17,109 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:08:01,574 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:12:50,713 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:13:53,719 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:18:25,453 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:35:33,582 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:35:58,541 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:37:16,545 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:50:47,895 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 18:51:34,258 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '123'}
+2022-09-07 18:53:02,355 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '123'}
+2022-09-07 18:56:34,187 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 18:56:46,404 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 18:56:58,068 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 18:58:25,305 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 18:58:49,773 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:00:00,550 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:00:09,392 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:03:15,455 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:04:59,681 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:07:54,400 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:10:15,417 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:10:47,183 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:30:13,518 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:30:34,653 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:31:05,759 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:31:34,467 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:32:20,369 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:32:44,874 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:33:40,249 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:34:12,024 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:38:49,735 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-07 19:39:20,077 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:40:44,544 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:40:56,025 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:41:52,829 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 19:41:57,748 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}

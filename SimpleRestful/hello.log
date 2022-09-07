@@ -532,3 +532,27 @@
 2022-07-29 10:41:03,872 - hello_app - INFO - Users:UserSearch:get:user_id:16
 2022-07-29 10:41:51,079 - hello_app - INFO - Users:UserSearch:get:user_id:16
 2022-07-29 10:50:13,462 - hello_app - INFO - Users:UserSearch:get:user_id:16
+2022-08-31 17:46:23,949 - hello_app - ERROR - User:CustomSignup:post:error:400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2022-08-31 17:48:36,393 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'vender', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-08-31 17:51:08,797 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim@gmail.com', 'otp': '8994', 'user_type': 'vender'}
+2022-08-31 17:51:08,846 - hello_app - INFO - OTP Expire Now Time:2022-08-31 12:21:08.846553
+2022-08-31 17:51:08,847 - hello_app - INFO - OTP Time:2022-08-31 12:18:36
+2022-08-31 17:51:08,848 - hello_app - INFO - OTP Time min:2
+2022-08-31 17:54:46,464 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washim@gmail.com', 'password': '123', 'user_type': 'vender', 'department_type': None}
+2022-08-31 17:54:46,465 - hello_app - INFO - custom login with email washim@gmail.com
+2022-08-31 18:01:20,551 - hello_app - INFO - Users:get:current_user_id:1
+2022-08-31 18:01:20,553 - hello_app - INFO - fetch user: 1
+2022-08-31 18:01:33,568 - hello_app - INFO - Users:get:current_user_id:1
+2022-08-31 18:01:33,569 - hello_app - INFO - fetch user: 1
+2022-08-31 18:01:36,706 - hello_app - INFO - Users:get:current_user_id:1
+2022-08-31 18:01:40,780 - hello_app - INFO - Users:get:current_user_id:1
+2022-08-31 18:01:40,780 - hello_app - INFO - fetch user: 1
+2022-09-01 13:33:43,841 - hello_app - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim1@gmail.com', 'password': '123', 'user_type': 'vender', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-01 13:34:58,402 - hello_app - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim1@gmail.com', 'otp': '1541', 'user_type': 'vender'}
+2022-09-01 13:34:58,412 - hello_app - INFO - OTP Expire Now Time:2022-09-01 08:04:58.412098
+2022-09-01 13:34:58,413 - hello_app - INFO - OTP Time:2022-09-01 08:03:44
+2022-09-01 13:34:58,414 - hello_app - INFO - OTP Time min:1
+2022-09-01 13:35:58,996 - hello_app - DEBUG - Users:CustomLogin::post::params::{'email': 'washim1@gmail.com', 'password': '123', 'user_type': 'vender', 'department_type': None}
+2022-09-01 13:35:58,997 - hello_app - INFO - custom login with email washim1@gmail.com
+2022-09-01 13:37:35,369 - hello_app - INFO - Users:get:current_user_id:2
+2022-09-01 13:37:35,372 - hello_app - INFO - fetch user: 2
