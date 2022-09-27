@@ -261,3 +261,202 @@
 2022-09-07 19:40:56,025 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
 2022-09-07 19:41:52,829 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
 2022-09-07 19:41:57,748 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim2@gmail.com', 'password': '12344'}
+2022-09-07 23:31:28,647 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-07 23:31:28,672 - student - INFO - custom login with email washim2@gmail.com
+2022-09-07 23:35:15,552 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:35:25,605 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:35:42,718 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:35:54,049 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:36:33,065 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:41:19,412 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:42:20,605 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:43:34,083 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:45:15,909 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:46:44,440 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:46:44,442 - student - DEBUG - Users:UserSearch::get::params::{'query': 'akram', 'page': 1, 'limit': 10}
+2022-09-07 23:46:44,444 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:47:12,368 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:47:12,369 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim', 'page': 1, 'limit': 10}
+2022-09-07 23:47:12,376 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:49:46,449 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:49:46,451 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim', 'page': 1, 'limit': 10}
+2022-09-07 23:49:46,459 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:52:00,102 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:52:00,104 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim', 'page': 1, 'limit': 10}
+2022-09-07 23:52:00,105 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:52:55,402 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:52:55,409 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim', 'page': 1, 'limit': 10}
+2022-09-07 23:52:55,412 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:53:15,361 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:53:15,363 - student - DEBUG - Users:UserSearch::get::params::{'query': '2', 'page': 1, 'limit': 10}
+2022-09-07 23:53:15,365 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:53:47,978 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:53:47,980 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim2@gmail.com', 'page': 1, 'limit': 10}
+2022-09-07 23:53:47,988 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:53:53,236 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:53:53,237 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim2@gmail.com', 'page': 1, 'limit': 10}
+2022-09-07 23:53:53,246 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:54:37,292 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:54:37,299 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim2@gmail.com', 'page': 1, 'limit': 10}
+2022-09-07 23:54:37,301 - student - INFO - UserService:user_search:user_id: 2
+2022-09-07 23:56:02,384 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-07 23:56:02,391 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim2@gmail.com', 'page': 1, 'limit': 10}
+2022-09-07 23:56:02,394 - student - INFO - UserService:user_search:user_id: 2
+2022-09-08 13:21:43,935 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-08 13:22:19,700 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-08 13:22:19,703 - student - INFO - custom login with email washim2@gmail.com
+2022-09-08 13:23:03,173 - student - INFO - Users:UserSearch:get:user_id:2
+2022-09-08 13:23:03,193 - student - DEBUG - Users:UserSearch::get::params::{'query': 'washim2@gmail.com', 'page': 1, 'limit': 10}
+2022-09-08 13:23:03,203 - student - INFO - UserService:user_search:user_id: 2
+2022-09-08 13:24:23,582 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:29:32,229 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:31:48,226 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:32:29,580 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:33:30,402 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:35:07,972 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:36:18,894 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:36:40,237 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:36:52,635 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:37:56,884 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:44:18,138 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:45:25,425 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:45:42,965 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:46:11,759 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:46:58,475 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:46:58,528 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 13:48:12,687 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:49:16,869 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:50:23,571 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 13:52:11,940 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:06:11,171 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:07:10,417 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:07:10,474 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:13:01,144 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:13:01,187 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:13:01,197 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:13:01,203 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:13:52,300 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:14:51,742 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:14:51,793 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:14:51,804 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:14:51,809 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:16:34,475 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:16:34,519 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:16:34,535 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:16:34,536 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:17:21,892 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:17:21,944 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:17:21,956 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:17:21,963 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:18:07,848 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:18:07,890 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:18:07,899 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:18:07,907 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:20:50,579 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:20:50,636 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:20:50,652 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:20:50,657 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:25:02,078 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:25:02,130 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:25:02,151 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:25:02,161 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:27:18,554 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:27:18,614 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:27:18,631 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:27:18,634 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:30:17,930 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:31:18,863 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:31:18,906 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:31:18,924 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:34:49,577 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:34:49,613 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:34:49,631 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:35:14,087 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:35:14,139 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:35:14,157 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:35:14,159 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:35:41,159 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:35:41,198 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:35:41,216 - student - ERROR - Handler:UploadFile:error: 'UPLOAD_TYPE'
+2022-09-08 14:35:41,225 - student - INFO - UploadFileService:upload_file_res:error:There is a problem with saving the file. Please try again.
+2022-09-08 14:42:04,457 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:42:04,505 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:42:04,526 - student - INFO - UploadFileService:upload_file_res:error:File type image/jpeg not allowed
+2022-09-08 14:44:01,646 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:44:01,689 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:44:01,710 - student - INFO - UploadFileService:upload_file_res:error:File type image/jpeg not allowed
+2022-09-08 14:45:29,262 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:45:29,309 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:49:44,187 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:49:44,243 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:54:10,235 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:54:10,274 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:56:03,875 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:56:03,921 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 14:58:25,009 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 14:58:25,053 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:04:23,279 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:04:23,326 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:04:23,335 - student - INFO - UploadFileService:upload_file_res:error:File type image/jpeg not allowed
+2022-09-08 15:05:16,493 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:05:16,540 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:08:06,092 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:08:06,140 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:09:23,980 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:09:24,028 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:13:48,745 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:13:48,790 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:16:03,481 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:16:03,530 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:16:52,706 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 15:16:52,747 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 15:22:07,903 - student - INFO - Users:post:current_user_id:1
+2022-09-08 15:22:56,764 - student - INFO - Users:post:current_user_id:1
+2022-09-08 15:23:17,952 - student - INFO - Users:post:current_user_id:2
+2022-09-08 15:23:28,860 - student - INFO - Users:post:current_user_id:2
+2022-09-08 15:26:59,139 - student - INFO - Users:post:current_user_id:2
+2022-09-08 15:27:37,250 - student - INFO - Users:post:current_user_id:2
+2022-09-08 15:28:59,883 - student - INFO - Users:post:current_user_id:2
+2022-09-08 15:30:34,281 - student - INFO - Users:post:current_user_id:2
+2022-09-08 20:09:49,422 - student - INFO - Users:post:current_user_id:2
+2022-09-08 20:09:57,409 - student - INFO - UploadUserProfile::Post:user_id: 2
+2022-09-08 20:09:57,514 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 20:42:16,111 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim2@gmail.com', 'password': '123', 'user_type': 'student', 'department_type': None}
+2022-09-08 20:42:16,133 - student - INFO - custom login with email washim2@gmail.com
+2022-09-08 20:44:05,540 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-08 20:46:20,777 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim2@gmail.com'}
+2022-09-08 21:17:14,682 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim4@gmail.com', 'password': '12345', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-08 21:17:26,650 - student - DEBUG - Users:CustomSignup:post:payload:{'email': 'washim5@gmail.com', 'password': '12345', 'user_type': 'student', 'first_name': None, 'last_name': None, 'country_code': None, 'mobile_number': None, 'department_type': None}
+2022-09-08 21:18:00,013 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim4@gmail.com', 'otp': '', 'user_type': 'student'}
+2022-09-08 21:18:08,512 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim4@gmail.com', 'otp': '1322', 'user_type': 'student'}
+2022-09-08 21:18:15,611 - student - DEBUG - Users:ValidateEmailOTP::post::params::{'email': 'washim5@gmail.com', 'otp': '1322', 'user_type': 'student'}
+2022-09-08 21:18:15,714 - student - INFO - OTP Expire Now Time:2022-09-08 15:48:15.714233
+2022-09-08 21:18:15,715 - student - INFO - OTP Time:2022-09-08 15:47:27
+2022-09-08 21:18:15,717 - student - INFO - OTP Time min:0
+2022-09-08 21:18:44,323 - student - DEBUG - Users:CustomLogin::post::params::{'email': 'washim5@gmail.com', 'password': '12345', 'user_type': 'student', 'department_type': None}
+2022-09-08 21:18:44,327 - student - INFO - custom login with email washim5@gmail.com
+2022-09-08 21:20:14,853 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:20:14,854 - student - INFO - fetch user: 7
+2022-09-08 21:20:23,925 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:20:32,909 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:20:36,732 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:20:55,126 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:20:55,128 - student - INFO - fetch user: 7
+2022-09-08 21:21:06,250 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:21:12,720 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:22:01,751 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:22:01,752 - student - INFO - fetch user: 7
+2022-09-08 21:23:04,224 - student - INFO - Users::put::request_body::{'data': {'first_name': 'washim', 'country_code': '+91', 'mobile_number': '8210805838'}}
+2022-09-08 21:23:04,227 - student - INFO - Users:CustomLogin::put:user_id:7
+2022-09-08 21:23:34,680 - student - INFO - Users:get:current_user_id:7
+2022-09-08 21:23:34,682 - student - INFO - fetch user: 7
+2022-09-08 21:26:48,710 - student - DEBUG - Users:ForgotPassword::post::body::{'email': 'washim5@gmail.com'}
+2022-09-08 21:29:48,575 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim5@gmail.com', 'password': '123456789'}
+2022-09-08 21:30:27,537 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim5@gmail.com', 'password': '123456789'}
+2022-09-08 21:31:03,838 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim5@gmail.com', 'password': '123456789'}
+2022-09-08 21:31:54,645 - student - DEBUG - Users:ResetPassword::post::body::{'email': 'washim5@gmail.com', 'password': '123456789'}
+2022-09-08 22:56:13,484 - student - INFO - UploadUserProfile::Post:user_id: 7
+2022-09-08 22:56:13,925 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}
+2022-09-08 22:57:22,437 - student - INFO - UploadUserProfile::Post:user_id: 7
+2022-09-08 22:58:22,172 - student - INFO - UploadUserProfile::Post:user_id: 7
+2022-09-08 22:58:22,220 - student - DEBUG - UploadUserProfile:post:body::{'file': <FileStorage: 'wasim.JPG' ('image/jpeg')>}

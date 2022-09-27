@@ -3,8 +3,8 @@ import email
 import imp
 from itertools import count
 from os import access
-from time import process_time_ns
 from turtle import update
+from urllib.parse import urldefrag
 from wsgiref.util import request_uri
 import student
 from student.models.student_model import StudentModel
@@ -19,6 +19,7 @@ from student.helper.auth_utils import generate_jwt_token
 from student.helper.mongo_base import Base_Mongo
 from flask import g, request
 from student.helper.auth_utils import generate_jwt_token, decode_jwt_token
+from student.helper.upload_file_to_s3 import UploadFile
 
 
 class StudentService:
@@ -287,23 +288,25 @@ class StudentService:
 
 
     def signout_user(self, user_id,):
-        access_token = request.to_json.get("access_token")
-        ref = StudentModel.query.filter_by(access_token=access_token).first()
-        print('ref:',ref)
-        print('access_token:',ref.access_token)
-        # if ref is not None:
-        #     return {"status": "already invalidated"}
+        print('userid',user_id)
+        pass
+        # access_token = request.to_json.get("access_token")
+        # ref = StudentModel.query.filter_by(access_token=access_token).first()
+        # print('ref:',ref)
+        # print('access_token:',ref.access_token)
+        # # if ref is not None:
+        # #     return {"status": "already invalidated"}
         
-        blacklist_refresh_token = StudentModel(access_token=ref.access_token)
+        # blacklist_refresh_token = StudentModel(access_token=ref.access_token)
 
-        # Add refresh token to session.
-        db.session.add(blacklist_refresh_token)
+        # # Add refresh token to session.
+        # db.session.add(blacklist_refresh_token)
 
-        # Commit session.
-        db.session.commit()
+        # # Commit session.
+        # db.session.commit()
 
-        # Return status of refresh token.
-        return {"status": "invalidated", "access_token": ref.access_token}
+        # # Return status of refresh token.
+        # return {"status": "invalidated", "access_token": ref.access_token}
 
 
 
@@ -314,3 +317,104 @@ class StudentService:
         # print('Auther Header:',auth_header)
         # user.save()
         # return 'signout'
+
+    
+    def user_search(self, user_id, user_type, query, page_count, limit):
+        # try:
+            res = []
+            print('res:',res)
+            app.logger.info("UserService:user_search:user_id: {}".format(user_id))
+            user = StudentModel.find_by_id(user_id)
+            print('User:',user)
+            if user:
+                if page_count < 1:
+                    return RestResponse([], err="Invalid Page count").to_json(), 400
+                page = page_count - 1
+                total = StudentModel.query.filter(
+                    StudentModel.first_name.like('%' + query + '%') | StudentModel.last_name.like(
+                        '%' + query + '%'), StudentModel.user_type == user_type, StudentModel.active == True).count()
+                print('Total:',total)
+                users = StudentModel.query.filter(
+                    StudentModel.first_name.like('%' + query + '%') | StudentModel.last_name.like(
+                        '%' + query + '%'), StudentModel.user_type == user_type, StudentModel.active == True).offset(
+                    page * limit).limit(limit).all()
+                print('Users:',users)
+                for user in users:
+                    print('user:',users)
+                    if user.userid in app.config['PROJECT_ASSIGNOR']:
+                        is_assign_project = True
+                    else:
+                        is_assign_project = False
+                    res.append({
+                        'id': user.id,
+                        'userid': user.userid,
+                        'first_name': user.first_name,
+                        'last_name': user.last_name,
+                        'profile_pic': user.profile_pic,
+                        'email': user.email,
+                        'country_code': user.country_code,
+                        'mobile_number': user.mobile_number,
+                        'email_verify': user.email_verify,
+                        'mobile_verify': user.mobile_verify,
+                        'is_assign_project': is_assign_project
+                    })
+                print('hello')
+                return RestResponse(res, status=1, page=1, total=total).to_json(), 200
+            else:
+
+                app.logger.error("UserService:user_search:user_id:{} is not found".format(user_id))
+                return RestResponse(err='User Not Found!').to_json(), 400
+        # except Exception as e:
+        #     app.logger.error("UserService:user_search:error: {}".format(str(e)))
+        #     return RestResponse(err=str(e)).to_json(), 500
+
+
+
+
+    def upload_file(self, file, user_id, obj_id=None, sub_type=None, attachment_type=None):
+        # try
+            user = StudentModel.find_by_id(user_id)
+            print('user:',user)
+            if user:
+                
+                upload_file_res, status_code = self._upload_user_profile_pic(file, user)
+                print('---------------------------')
+                print('upload File res:',upload_file_res)
+                
+
+
+                if upload_file_res['status']:
+                    print('upload File res[]:',upload_file_res['status'])
+                    return RestResponse({'url': upload_file_res['url']}, message=upload_file_res['message'],
+                                        status=upload_file_res['status']).to_json(), status_code
+                else:
+                    app.logger.info("UploadFileService:upload_file_res:error:{}".format(upload_file_res['err']))
+                    print('Else')
+                    return RestResponse(err=upload_file_res['err']).to_json(), status_code
+                
+            else:
+                app.logger.info("UploadFileService:upload_file:user_id:{} is not found".format(user_id))
+                return RestResponse(err="user is not found!").to_json(), 400
+        # except Exception as e:
+        #     app.logger.error('UploadFileService:upload_file::error:{}'.format(str(e)))
+        #     return RestResponse(err='Upload file: something went wrong!').to_json(), 500
+
+    def _upload_user_profile_pic(self, file, user_obj):
+        # try:
+            print('file:',file)
+            print('User_Obje:',user_obj)
+            status_code = 201
+            upload_file = UploadFile.upload_file(file, user_obj.user_type, user_obj.id)
+            print('Upload File:',upload_file)
+            if upload_file['status']:
+                user_obj.profile_pic = upload_file['url']
+                user_obj.updated_at = datetime.utcnow()
+                user_obj.updated_by = user_obj.id
+                user_obj.save()
+            else:
+                status_code = 500
+            return upload_file, status_code
+        # except Exception as e:
+        #     app.logger.error('UploadFileService:_upload_user_profile_pic::error:{}'.format(str(e)))
+        #     return {'status': 0, 'err': 'something went wrong with updating the profile pic.', 'data': {},
+        #             'message': ''}, 500

@@ -1,10 +1,13 @@
+from importlib.metadata import files
 from flask_restful import Resource, reqparse
 from student import app
 import student
 from student.services.student_service import StudentService
 from student.helper.rest_response import RestResponse
-from student.decorators.authenticated import authenticated
+from student.decorators.authenticated import authenticated, emb_authenticated
 from flask import g, request
+
+import werkzeug
 
 class CustomSignup(Resource):
         def post(self):
@@ -114,17 +117,16 @@ class ResetPassword(Resource):
         #     return RestResponse(err='Something went wrong').to_json(), 500
 
 
-
-
-
 class CustomSigout(Resource):
     @authenticated()
     def post(self, current_user_id, user_id=None):
         app.logger.info("Users:post:current_user_id:{}".format(current_user_id))
         print('current_userid:',current_user_id)
         if user_id is None:
+            print('Sudent.singout user:',StudentService().signout_user(current_user_id))
             return StudentService().signout_user(current_user_id)
         elif int(current_user_id) == int(user_id):
+            print('Sudent.singout user:',StudentService().signout_user(user_id))
             return StudentService().signout_user(user_id)
         else:
             return RestResponse(err='Unauthorized User !!').to_json(), 401
@@ -184,4 +186,50 @@ class CustomSigout(Resource):
             }
             return RestResponse(student, status=1).to_json(), 200
         
-        
+
+class UserSearch(Resource):
+    @emb_authenticated()
+    def get(self, current_user_id, user_type=None):
+        # try:
+            app.logger.info("Users:UserSearch:get:user_id:{}".format(current_user_id))
+            parser = reqparse.RequestParser()
+            print('parser:',parser)
+            parser.add_argument('query', type=str, help='Query can not be blank', required=True)
+            parser.add_argument('page', type=int, default=1)
+            parser.add_argument('limit', type=int, default=10)
+            args = parser.parse_args()
+            app.logger.debug("Users:UserSearch::get::params::{}".format(args))
+            if not args['query']:
+                return RestResponse([], err='Query can not be blank').to_json(), 400
+            if not type:
+                return RestResponse([], err='UserType can not be blank').to_json(), 400
+            print('Current User Id:',current_user_id,'User Type', user_type.strip(),'Query:', args['query'].strip(), 'Page:', args['page'],'Limit',
+                                             args['limit'])
+            return StudentService().user_search(current_user_id, user_type.strip(), args['query'].strip(), args['page'],
+                                             args['limit'])
+        # except Exception as e:
+        #     app.logger.error("Users:UserSearch::get:error:{}".format(str(e)))
+        #     return RestResponse([], err=str(e)).to_json(), 500
+
+
+
+class UploadUserProfile(Resource):
+    @authenticated()
+    def post(self, current_user_id):
+        # try:
+            app.logger.info("UploadUserProfile::Post:user_id: {}".format(current_user_id))
+            parser = reqparse.RequestParser()
+            print('hello::::::::::::::::::')
+            parser.add_argument('file', type=werkzeug.datastructures.FileStorage, location='files', required=True)
+            # parser.add_argument('upload_type', type=str, help='Upload Type can not be blank')
+            args = parser.parse_args()
+            print('Args:',args)
+            
+            app.logger.debug("UploadUserProfile:post:body::{}".format(args))
+            # if not args['upload_type']:
+            #     return RestResponse(err='Upload Type can not be blank').to_json(), 400
+            print('File Upload Data:',args['file'], current_user_id)
+            return StudentService().upload_file(args['file'], current_user_id)
+        # except Exception as e:
+        #     app.logger.error("UploadUserProfile:post:error:{}".format(e))
+        #     return RestResponse(err='Something went wrong').to_json(), 500

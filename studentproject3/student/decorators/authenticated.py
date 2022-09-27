@@ -27,3 +27,38 @@ def authenticated(permission=None):
     return authorized
 
 
+def emb_authenticated(permission=None):
+    """
+    authenticate exmyb user
+    """
+
+    def authorized(fn):
+        @jwt_required()
+        @wraps(fn)
+        def _wrap(*args, **kwargs):
+
+            current_user_id = get_jwt_identity()
+            print('Current_User:',current_user_id)
+            if not current_user_id:
+                return RestResponse(err='Unauthorized User !!').to_json(), 401
+            user = StudentModel.find_by_uuid(current_user_id)
+            print('user:',user)
+            if user:
+                if not user.active:
+                    return RestResponse(err='User profile is inactive').to_json(), 401
+            else:
+                return RestResponse(err='User is not found').to_json(), 400
+
+            if user.user_type != 'student':
+                print('user.user_type:',user.user_type)
+                return RestResponse(err="Invalid User Type").to_json(), 401
+
+            return fn(current_user_id=user.id, *args, **kwargs)
+
+        return _wrap
+
+    return authorized
+
+
+
+

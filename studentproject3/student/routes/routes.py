@@ -1,5 +1,5 @@
 from student import api
-from student.controllers.student_controller import CustomSignup, ValidateEmailOTP, Student, CustomSigout, ForgotPassword, ResetPassword
+from student.controllers.student_controller import CustomSignup, ValidateEmailOTP, Student, CustomSigout, ForgotPassword, ResetPassword, UserSearch, UploadUserProfile
 
 
 api.add_resource(CustomSignup, '/api/v1/student/signup')
@@ -8,3 +8,5 @@ api.add_resource(Student, '/api/v1/student', '/api/v1/student/<user_id>')
 api.add_resource(ForgotPassword, '/api/v1/forgot_password')
 api.add_resource(CustomSigout, '/api/v1/student/signout')
 api.add_resource(ResetPassword, '/api/v1/reset_password')
+api.add_resource(UserSearch, '/api/v1/<user_type>/user_search')
+api.add_resource(UploadUserProfile, '/api/v1/user/upload_profile')

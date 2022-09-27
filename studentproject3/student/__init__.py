@@ -8,7 +8,7 @@ import time
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from student.helper.mongo_base import Base_Mongo
-from pymongo import MongoClient
+# from pymongo import MongoClient
 
 
 app = Flask(__name__)
@@ -84,3 +84,9 @@ def conf_logging(app):
 
 
 conf_logging(app)
+
+
+UPLOAD_FOLDER = 'D:/workspace/washim_workspace/Upload'
+app.secret_key = "secret key"
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
