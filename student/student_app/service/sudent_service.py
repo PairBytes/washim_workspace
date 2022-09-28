@@ -4,7 +4,7 @@ import os
 import app
 import pandas as pd
 import config
-
+from config import abc
 import os
 from pathlib import Path
 
@@ -31,6 +31,9 @@ def parseCSV(filePath):
             print('values:',value)
 
             print(i,row['Name'],row['Mobile'],row['Address'],row['Education'])
+            abc(sql, value)
+            # mycursor.execute(sql, value, if_exists='append')
+            # mydb.commit()
 
 
 

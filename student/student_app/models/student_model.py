@@ -1,4 +1,4 @@
-from student_app import db, app
+from student_app import db
 
 class Student(db.Model):
     __tablename__ ="Student_Table"
